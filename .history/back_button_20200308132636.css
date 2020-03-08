@@ -1,0 +1,22 @@
+body {
+ background-color: aqua;
+}
+    .back_button {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        }
+
+    .back_icon {
+        width: 1em;
+        height: 1em; 
+       
+    }
+
+    .button_text {
+        font-size: 1em;
+        color: white;
+    }
+    
+

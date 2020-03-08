@@ -1,0 +1,14 @@
+.back_button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    }
+
+body {
+    background-color: aquamarine;
+}
+.icon {
+    fill: purple;
+}
