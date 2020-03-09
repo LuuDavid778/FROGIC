@@ -1,0 +1,15 @@
+/* CSS for mobile */
+@media screen and (max-width: 360px){ 
+    body {
+        background-color:#91ABFF;
+    }
+
+    .back_button {
+        display: flex;
+        background-color: none;
+        border: none;
+        font-size: 1em;
+        align-items: center;
+    }
+    
+  }

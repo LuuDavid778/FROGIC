@@ -1,0 +1,22 @@
+/* CSS for mobile */
+@media screen and (max-width: 360px){ 
+    body {
+        background-color:#91ABFF;
+    }
+
+    .back_button {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        font-size: 1em;
+        color: white;
+        }
+
+    .back_icon {
+        width: 1em;
+        height: 1em; 
+       
+    }
+    
+  }

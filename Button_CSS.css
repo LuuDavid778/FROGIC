@@ -1,0 +1,27 @@
+@media only screen and (max-device-width: 360px) {
+    .btn__next__holder {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn__next {
+        width: 700px;
+        height: 130px;
+        border-radius: 100px;
+        background-color: #F08080;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 1450px;
+    }
+
+    .btn__next__text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+    }
+}
