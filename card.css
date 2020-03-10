@@ -1,13 +1,7 @@
 /* CSS for mobile */
-@media screen and (max-width: 360px){ 
+@media only screen and (max-device-width: 360px){ 
     
-    body {
-        background-color:#91ABFF;
-        width: 100vw;
-        height: 100vh;
-        margin: 0px;
-    }
-
+    
     #card {
         background-color: white;
         width: 100%;

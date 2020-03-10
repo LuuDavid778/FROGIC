@@ -1,11 +1,22 @@
+@media only screen and (max-device-width: 360px) {
 #container {
+    position: relative;
     display: flex;
     align-items: center;
-    background-color: #91ABFF;
+    top: 27vh;
 }
 
 .texts {
     color: white;
     margin-left: 20px;
-    font-size: 2em;
+    font-size: 50px;
+}
+
+#container__img {
+    background-image: url(img/logo.svg);
+    width: 230px;
+    height: 230px;
+    background-repeat: no-repeat;
+}
+
 }

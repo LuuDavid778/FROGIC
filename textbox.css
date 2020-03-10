@@ -1,29 +1,30 @@
 #label {
     color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-}
-
-body {
-    background-color: #91ABFF;
+    font-size: 35pt;
 }
 
 input {
-    font-family: 'Raleway', sans-serif;
-    height: 35px;
-    width: 260px;
-    border-radius: 10px;
+    height: 120px;
+    width: 650px;
+    border-radius: 30px;
     border: 0px;
-    padding-left: 10px;
-   
+    padding-left: 15px;
 }
 
 input::placeholder {
-    font-size: 13px;
+    font-size: 30pt;
     color: #003E32;
     opacity: 0.48;
 }
 
+#textbox {
+    position: absolute;
+    display: flex;
+    bottom: 545px;
+    flex-direction: column;
+}
 
-
+#textbox__input {
+    font-size: 30pt;
+}
 

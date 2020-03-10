@@ -2,10 +2,28 @@
 <html>
     <head>
         <link href="styles.css" rel="stylesheet">
+        <link href="back_button.css" rel="stylesheet">
+        <link href="Button_CSS.css" rel="stylesheet">
+        <link href="logo.css" rel="stylesheet">
+        <link href="textbox.css" rel="stylesheet">
+        <link href="card.css" rel="stylesheet">
     </head>
 
 <body>
     <div id="app">
+        <div id="container">
+            <div id= "container__img"></div>
+            <div class="texts">Hello.<br>What is your name?</br></div>
+        </div>
+        <div id = "textbox">
+            <p id="label">Enter your name.</p>
+            <input type="text" id="textbox__input" name="name" placeholder="First Name">
+         </div>
+
+         <div class="btn__next__holder" onclick="storeName()">
+            <div class="btn__next"><p class="btn__next__text">Next</p></div>
+        </div>
+
 
 
 
