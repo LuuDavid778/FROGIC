@@ -1,4 +1,6 @@
+var username 
 function storeName() {
-    var username = document.getElementById("textbox__input").value;
-    console.log(username)
+    document.location.href = "intro.html";
+    username = document.getElementById("textbox__input").value;
 }
+
