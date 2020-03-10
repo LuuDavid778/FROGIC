@@ -1,7 +1,5 @@
 /* CSS for mobile */
 @media only screen and (max-device-width: 360px){ 
-    
-    
     #card {
         background-color: white;
         width: 100%;
