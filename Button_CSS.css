@@ -7,8 +7,8 @@
     }
     
     .btn__next {
-        width: 700px;
-        height: 130px;
+        width: 100%;
+        height:130px;
         border-radius: 100px;
         background-color: #F08080;
         position: absolute;
