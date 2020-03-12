@@ -16,11 +16,11 @@
 
   #startpage__title{
       color: white;
-      font-size: 120pt;
-      font-weight: bolder;
-      position: relative;
-      top: -260px;
-
+      font-size: 90pt;
+      font-weight: bold;
+      position: absolute;
+      top: 50px;
+      
   }
 
   #startpage__frogimg {

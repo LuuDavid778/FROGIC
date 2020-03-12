@@ -16,23 +16,12 @@
 
   #startpage__title{
       color: white;
-      font-size: 120pt;
-      font-weight: bolder;
-      position: relative;
-      top: -260px;
-
+      font-size: 90pt;
   }
 
-  #startpage__frogimg {
-    position: relative;
-    width: 400px;
-    height: 380px;
-}
-
-/* button code */
-
   .btn__next__holder {
- 
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
