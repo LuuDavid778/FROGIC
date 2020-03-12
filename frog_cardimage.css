@@ -3,6 +3,7 @@
     body {
       margin: 0;
     }
+/*
    #app {
     background-color: #91ABFF;
     height: 100vh;
@@ -13,7 +14,7 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
   }
-
+*/
   .image_container {
     display: flex;
     justify-content: center;

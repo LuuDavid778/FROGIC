@@ -7,6 +7,11 @@ function storeName() {
     document.getElementById("intropage").style.display = "flex";
 }
 
+function startGame() {
+    document.getElementById("startpage").style.display = "none";
+    document.getElementById("namepage").style.display = "flex";
+}
+
 
 
 

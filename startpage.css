@@ -1,6 +1,8 @@
 /* CSS for mobile */
 @media only screen and (max-device-width: 360px){ 
-    body {
+  
+  /*
+  body {
       margin: 0;
     }
    #app {
@@ -13,25 +15,27 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
   }
+  */
 
   #startpage__title{
       color: white;
-      font-size: 120pt;
+      font-size: 100pt;
       font-weight: bolder;
-      position: relative;
-      top: -260px;
+      position: absolute;
+      top: 13%;
 
   }
 
   #startpage__frogimg {
-    position: relative;
+    position: absolute;
+    top: 35%;
     width: 400px;
     height: 380px;
 }
 
 /* button code */
 
-  .btn__next__holder {
+  /* .btn__next__holder {
  
     display: flex;
     justify-content: center;
@@ -55,6 +59,7 @@
     color: white;
 }
   
-  
+  */
   
   }
+  

@@ -10,8 +10,14 @@
     font-family: 'Raleway', sans-serif;
   }
 
-  #namepage {
+  #startpage {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #namepage {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,4 +54,14 @@
     
 }
   
+  }
+
+  /* image sizing */
+
+  .image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
   }

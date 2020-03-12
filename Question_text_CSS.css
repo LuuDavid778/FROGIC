@@ -16,4 +16,8 @@
     
         width: 700px;
     }
+
+    .q__text p {
+        margin-bottom: 10px;
+    }
 }
