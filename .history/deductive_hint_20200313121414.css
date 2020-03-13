@@ -1,0 +1,63 @@
+@media only screen and (max-device-width: 360px){ 
+    body {
+      margin: 0;
+    }
+
+   #app {
+    background-color: #91ABFF;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+  #card {
+    background-color: white;
+    width: 100%;
+    height: 56.71%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.deductive_hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+  .deductive_hint__ribbit {
+      width: 150px;
+      height: 150px;
+
+  }
+
+  .deductive_hint__hint_border {
+      border: solid #F08080 5px;
+      width: auto;
+      height: 60px;
+      border-radius: 50px;
+      display: flex;
+      margin: 20px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 20px;
+
+  }
+
+  .deductive_hint__hint_text {
+      padding: 30px;
+      font-size: 28pt;
+
+  }
+
+}
