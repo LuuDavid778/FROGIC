@@ -21,15 +21,11 @@
     bottom: 0;
     border-radius: 40px 40px 0px 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .deductive_hint {
   display: flex;
   justify-content: center;
-  align-items: center;
  
 }
   .deductive_hint__ribbit {
@@ -54,7 +50,6 @@
 
   .deductive_hint__hint_text {
       padding: 10px;
-      font-size: 13pt;
 
   }
 
