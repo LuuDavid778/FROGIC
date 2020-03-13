@@ -27,6 +27,11 @@
       display:none;
   }
 
+  .q__text__header {
+    line-height: 0px;
+    padding-bottom: 20px;
+  }
+
   /* button */
   .btn__next__holder {
     width: 100%;
