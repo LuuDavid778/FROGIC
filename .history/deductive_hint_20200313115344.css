@@ -33,13 +33,11 @@
       height: 28px;
       border-radius: 50px;
       display: flex;
-      margin: 20px;
       justify-content: center;
       align-items: center;
   }
 
   .deductive_hint__hint_text {
-      padding: 5px;
 
   }
 }

@@ -29,17 +29,12 @@
 
   .deductive_hint__hint_border {
       border: solid #F08080 2px;
-      width: auto;
+      width: 100px;
       height: 28px;
       border-radius: 50px;
-      display: flex;
-      margin: 20px;
-      justify-content: center;
-      align-items: center;
   }
 
   .deductive_hint__hint_text {
-      padding: 5px;
-
+      
   }
 }

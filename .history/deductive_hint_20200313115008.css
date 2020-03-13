@@ -22,24 +22,14 @@
     border-radius: 40px 40px 0px 0px;
     display: flex;
 }
-  .deductive_hint__ribbit {
+  #deductive_hint__ribbit {
       width:100px;
       height: 100px;
   }
-
-  .deductive_hint__hint_border {
+  .deductive_hint__hint {
       border: solid #F08080 2px;
       width: auto;
       height: 28px;
       border-radius: 50px;
-      display: flex;
-      margin: 20px;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .deductive_hint__hint_text {
-      padding: 5px;
-
   }
 }

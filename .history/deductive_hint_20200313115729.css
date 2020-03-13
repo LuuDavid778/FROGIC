@@ -21,6 +21,7 @@
     bottom: 0;
     border-radius: 40px 40px 0px 0px;
     display: flex;
+    justify-content: center;
 }
   .deductive_hint__ribbit {
       width:100px;
