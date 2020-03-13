@@ -28,7 +28,6 @@
   }
 
   .q__text__header {
-    line-height: 0px;
     padding-bottom: 20px;
   }
 
@@ -68,10 +67,9 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 25%;
+    right: 30%;
     bottom: 65%;
-    width: 500px;
-  
+    width: 400px;
 
   }
 
