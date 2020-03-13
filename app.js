@@ -22,6 +22,15 @@
             bgColor: "#91abff",
             fontSize: "35pt"
 
+        },
+         {
+            img: "img/dog1_sad.svg",
+            header: "",
+            cardtext: `<p>I've lost something but I can't remember... <br>Can you help me figure out what I lost?</p>
+            <div id='frog_tag'>`,
+            bgColor: "#91abff",
+            fontSize: "35pt"
+
         }
 
     ];
