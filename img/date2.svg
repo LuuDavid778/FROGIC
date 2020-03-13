@@ -1,0 +1,11 @@
+<svg id="Group_1134" data-name="Group 1134" xmlns="http://www.w3.org/2000/svg" width="275.153" height="275.153" viewBox="0 0 275.153 275.153">
+  <g id="calendar" transform="translate(0 0)">
+    <path id="Path_299" data-name="Path 299" d="M263.689,171.52H11.464A11.469,11.469,0,0,0,0,182.984V320.1A34.436,34.436,0,0,0,34.394,354.5H240.759A34.436,34.436,0,0,0,275.153,320.1V182.984A11.469,11.469,0,0,0,263.689,171.52Zm0,0" transform="translate(0 -79.344)" fill="#eceff1"/>
+    <path id="Path_300" data-name="Path 300" d="M240.759,64H34.394A34.393,34.393,0,0,0,0,98.394v34.852H275.153V98.394A34.393,34.393,0,0,0,240.759,64Zm0,0" transform="translate(0 -29.606)" fill="#b9a8ff"/>
+    <g id="Group_131" data-name="Group 131" transform="translate(45.858)">
+      <path id="Path_301" data-name="Path 301" d="M108.262,0H96.8A11.47,11.47,0,0,0,85.332,11.464v45.86A11.47,11.47,0,0,0,96.8,68.788h11.464a11.468,11.468,0,0,0,11.464-11.464V11.464A11.468,11.468,0,0,0,108.262,0Zm0,0" transform="translate(-85.332)" fill="#847aae"/>
+      <path id="Path_302" data-name="Path 302" d="M385.6,0H374.132a11.468,11.468,0,0,0-11.464,11.464v45.86a11.468,11.468,0,0,0,11.464,11.464H385.6a11.47,11.47,0,0,0,11.466-11.464V11.464A11.47,11.47,0,0,0,385.6,0Zm0,0" transform="translate(-213.626)" fill="#847aae"/>
+    </g>
+  </g>
+  <text id="_02" data-name="02" transform="translate(47.207 236.669)" font-size="161" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">02</tspan></text>
+</svg>
