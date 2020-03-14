@@ -45,14 +45,6 @@ var deductindex = 0
     ];
 
 
-    function storeName() {
-        var userinput = document.getElementById("textbox__input").value;
-        document.getElementById("nameofuser").innerHTML = userinput
-        document.getElementById("namepage").style.display = "none";
-        document.getElementById("intropage").style.display = "flex";
-        document.getElementById("app").style.backgroundColor = "#fdbe6c";
-    }
-
     function startGame() {
         document.getElementById("startpage").style.display = "none";
         document.getElementById("namepage").style.display = "flex";
@@ -67,7 +59,7 @@ var deductindex = 0
         document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
         document.querySelector("#image_container_img").src = deductstate[deductindex].img;
         document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
-        console.log(deductstate[deductindex].buttontext)
+    
 
     }
 
@@ -84,4 +76,13 @@ var deductindex = 0
   
 
 
+    }
+       function storeName() {
+        var userinput = document.getElementById("textbox__input").value;
+        document.getElementById("nameofuser").innerHTML = userinput
+        document.getElementById("namepage").style.display = "none";
+        document.getElementById("intropage").style.display = "flex";
+        document.getElementById("app").style.backgroundColor = "#fdbe6c";
+        deductstate[2].header = "<p>Hey <span>" + userinput + "</span>!<br> My name is Racer.</p>"
+        deductstate[0].header = "<p>Hello <span>" + userinput + "</span>!<br> My name is Hoppy.</p>"
     }
