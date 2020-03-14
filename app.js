@@ -1,9 +1,11 @@
+var deductindex = 0
     var deductstate = [{
             img: "img/logo.svg",
             header: "<p>Hello <span id=\"nameofuser\">name</span>!<br> My name is Hoppy.</p>",
             cardtext: "<p>I need your help. <br> Can you build me a car? <br> I need to get to my grandpa's house. <br> My friends will give you the car parts but,  You must help them first!</p>",
             bgColor: "#fdbe6c",
-            fontSize: "35px"
+            fontSize: "35px",
+            buttontext: "Okay!"
         },
 
         {
@@ -11,7 +13,8 @@
             header: "<p>Psst!<br> I'm Mr.Ribbit.</p>",
             cardtext: "<p>Along our journey, I'll be<br>teaching you the methods of reasoning!</p>",
             bgColor: "#fdbe6c",
-            fontSize: "35pt"
+            fontSize: "35pt",
+            buttontext: "Start Learning"
 
         },
 
@@ -20,18 +23,24 @@
             header: "<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Racer.</p>",
             cardtext: "<p>I've lost something but I can't remember... <br>Can you help me figure out what I lost?</p>",
             bgColor: "#91abff",
-            fontSize: "35pt"
+            fontSize: "35pt",
+            buttontext: "Help Racer"
 
         },
          {
-            img: "img/dog1_sad.svg",
+            img: "img/threedogs.svg",
             header: "",
-            cardtext: `<p>I've lost something but I can't remember... <br>Can you help me figure out what I lost?</p>
-            <div id='frog_tag'>`,
+            cardtext: `<p id="threedogs_text">Some dogs lose their bones.</p>
+            <div class="deductive_hint">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+            <div class="deductive_hint__hint_border">
+                    <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
+        </div>`,
             bgColor: "#91abff",
-            fontSize: "35pt"
+            fontSize: "35pt",
+            buttontext: "Next"
 
-        }
+        },
 
     ];
 
@@ -50,27 +59,29 @@
     }
 
 
-
     function forwardDeduct() {
         deductindex++
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+        document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
         document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
         document.querySelector("#image_container_img").src = deductstate[deductindex].img;
         document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
+        console.log(deductstate[deductindex].buttontext)
 
-        console.log(deductindex)
     }
 
-    var deductindex = 0
+    
     function backwardDeduct() {
-        
+
         deductindex--
+        document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
         document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
         document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
         document.querySelector("#image_container_img").src = deductstate[deductindex].img;
         document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
-        console.log(deductindex)
+  
+
 
     }
