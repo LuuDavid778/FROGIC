@@ -1,6 +1,6 @@
 var deductindex = 0
     var deductstate = [{
-            img: "img/logo.svg",
+            img: `<img id="image_container_img" src="img/logo.svg">`,
             header: "<p>Hello <span id=\"nameofuser\">name</span>!<br> My name is Hoppy.</p>",
             cardtext: "<p>I need your help. <br> Can you build me a car? <br> I need to get to my grandpa's house. <br> My friends will give you the car parts but,  You must help them first!</p>",
             bgColor: "#fdbe6c",
@@ -9,7 +9,7 @@ var deductindex = 0
         },
 
         {
-            img: "img/mr_ribbit.svg",
+            img: `<img src="img/mr_ribbit.svg">`,
             header: "<p>Psst!<br> I'm Mr.Ribbit.</p>",
             cardtext: "<p>Along our journey, I'll be<br>teaching you the methods of reasoning!</p>",
             bgColor: "#fdbe6c",
@@ -19,7 +19,7 @@ var deductindex = 0
         },
 
         {
-            img: "img/dog1_sad.svg",
+            img: `<img src="img/dog1_sad.svg">`, 
             header: "<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Racer.</p>",
             cardtext: "<p>I've lost something but I can't remember... <br>Can you help me figure out what I lost?</p>",
             bgColor: "#91abff",
@@ -28,7 +28,7 @@ var deductindex = 0
 
         },
          {
-            img: "img/threedogs.svg",
+            img: `<img src="img/threedogs.svg">`,
             header: "",
             cardtext: `<p id="threedogs_text">Some dogs lose their bones.</p>
             <div class="deductive_hint">
@@ -42,8 +42,23 @@ var deductindex = 0
 
         },
 
+        {
+            img: `<div id="container">
+            <div id="container__img"><img src="img/logo.svg"></div>
+            <div class="texts">Before we continue.<br>Let's learn what</br>a<b>premise</b>is first!</div>
+        </div>`,
+        header: /*insert kozy's code here */ ""
+
+
+        }
+
     ];
 
+    function resetPage() {
+        document.getElementById("startpage").style.display = "none";
+        document.getElementById("namepage").style.display = "none";
+        document.getElementById("intropage").style.display = "none";
+    }
 
     function startGame() {
         document.getElementById("startpage").style.display = "none";
@@ -53,26 +68,35 @@ var deductindex = 0
 
     function forwardDeduct() {
         deductindex++
+        console.log(deductindex)
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
         document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
-        document.querySelector("#image_container_img").src = deductstate[deductindex].img;
-        document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
+        document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+        document.getElementById("app").style.backgroundColor = "#91abff"
     
 
     }
 
     
     function backwardDeduct() {
-
         deductindex--
+        console.log(deductindex)
+        if (deductindex === -1) {
+            resetPage()
+            startGame()
+
+            deductindex = 0 
+            document.querySelector("#app").style.backgroundColor = "#91abff";
+        } else{
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
         document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
         document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
-        document.querySelector("#image_container_img").src = deductstate[deductindex].img;
+        document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
         document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
+        }
   
 
 
