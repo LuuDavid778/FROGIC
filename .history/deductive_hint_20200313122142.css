@@ -1,0 +1,32 @@
+@media only screen and (max-device-width: 360px) {
+  .deductive_hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 75px;
+  }
+  
+  .deductive_hint__ribbit {
+    width: 150px;
+    height: 150px;
+  }
+
+  .deductive_hint__hint_border {
+    border: solid #f08080 5px;
+    width: auto;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+  }
+
+  .deductive_hint__hint_text {
+    padding: 35px;
+    font-size: 29pt;
+  }
+}
