@@ -47,7 +47,13 @@ var deductindex = 0
             <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
             <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's learn what</br>a<b> premise </b>is first!</div>
         </div>`,
-        header: /*insert kozy's code here */ ""
+        header: `<img id= "ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+        cardtext: `<p id = "definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that 
+        supports a conclusion.</p>`,
+        bgColor: "#91abff",
+            fontSize: "35pt",
+            buttontext: "Got it!"
+
 
 
         }

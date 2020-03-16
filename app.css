@@ -1,5 +1,5 @@
 /* CSS for mobile */
-@media only screen and (max-device-width: 360px){ 
+@media only screen and (max-device-width: 450px){ 
     body {
       margin: 0;
     }
@@ -107,5 +107,23 @@
   }
 
 
+  #ribbit_hintcenter {
+width: 125px;
+height: 125px;
+position: relative;
+right: -300px;
+top: 40px;
   }
+
+  #word_hl {
+    color: #F08080;
+  }
+#definition_cardtext {
+  position: relative;
+  right: -55px;
+  top: 20px;
+  font-size: 40pt;
+}
+
+}
 
