@@ -28,7 +28,7 @@ var deductindex = 0
 
         },
          {
-            img: `<img src="img/threedogs.svg">`,
+            img: `<img src="img/dogs.svg">`,
             header: "",
             cardtext: `<p id="threedogs_text">Some dogs lose their bones.</p>
             <div class="deductive_hint">
