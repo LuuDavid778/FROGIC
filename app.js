@@ -43,9 +43,9 @@ var deductindex = 0
         },
 
         {
-            img: `<div id="container">
-            <div id="container__img"><img src="img/logo.svg"></div>
-            <div class="texts">Before we continue.<br>Let's learn what</br>a<b>premise</b>is first!</div>
+            img: `<div id = "logotext_container" id="container">
+            <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
+            <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's learn what</br>a<b> premise </b>is first!</div>
         </div>`,
         header: /*insert kozy's code here */ ""
 
@@ -86,9 +86,8 @@ var deductindex = 0
         if (deductindex === -1) {
             resetPage()
             startGame()
-
             deductindex = 0 
-            document.querySelector("#app").style.backgroundColor = "#91abff";
+            document.querySelector("#app").style.backgroundColor = "#91abff";   
         } else{
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
@@ -101,7 +100,7 @@ var deductindex = 0
 
 
     }
-       function storeName() {
+       function storeName() {   
         var userinput = document.getElementById("textbox__input").value;
         document.getElementById("nameofuser").innerHTML = userinput
         document.getElementById("namepage").style.display = "none";

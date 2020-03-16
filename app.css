@@ -85,6 +85,26 @@
   top:130px;
   }
 
+  #logotext_container {
+    position: relative;
+  display: flex;
+  left: 50px;
+  
+  }
+
+  #logotext_txt {
+    width: 500px;
+  }
+
+  #logotext_img{
+    width: 250px;
+    height: 250px;
+    top: -40px;
+    left: -35px;
+
+  
+    position: relative;
+  }
 
 
   }
