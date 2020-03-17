@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="intro.css" rel="stylesheet">
-        <link href="app.css" rel="stylesheet">
-        <link href="back_button.css" rel="stylesheet">
-        <link href="Button_CSS.css" rel="stylesheet">
-        <link href="logo.css" rel="stylesheet">
-        <link href="textbox.css" rel="stylesheet">
-        <link href="card.css" rel="stylesheet">
-        <link href="Question_text_CSS.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <link href="startpage.css" rel="stylesheet">
+    <link href="intro.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <link href="back_button.css" rel="stylesheet">
+    <link href="logo.css" rel="stylesheet">
+    <link href="textbox.css" rel="stylesheet">
+    <link href="card.css" rel="stylesheet">
+    <link href="Question_text_CSS.css" rel="stylesheet">
+    <link href="deductive_hint.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <div id="app">
-        <div id="namepage">
-        <div id="container">
-            <div id= "container__img"></div>
-            <div class="texts">Hello.<br>What is your name?</br></div>
-        </div>
-        <div id = "textbox">
-            <p id="label">Enter your name.</p>
-            <input type="text" id="textbox__input" name="name" placeholder="First Name">
-         </div>
-
-         <div class="btn__next__holder" onclick="storeName()">
-            <div class="btn__next"><p class="btn__next__text">Next</p></div>
-        </div>
-    </div>
-
-    <div id="intropage">
-
-        <button class="back_button">
-            <img src="img/back_icon.svg" class="back_icon">
-            <div class="button_text">Back</div>
-        </button>
-
-        <div id="card">
-            <div class="q__text__holder">
-                <div class="q__text q__text__header"><p>Hello <span id="nameofuser">name</span>!<br> My name is Hoppy.</p></div>
-                <div class="q__text q__text__desc"><p>I need your help. <br> Can you build me a car? <br> I need to get to my grandpa's house. <br> My friends will give you the car parts but,  
-                    You must help them first!</p></div>
-            </div>
+        <div id="startpage" onclick="startGame()">
+            <div id="startpage__title">FLOGIC</div>
+            <img src="img/logo.svg" id="startpage__frogimg">
             <div class="btn__next__holder">
-                <div class="btn__next"><p class="btn__next__text">Okay!</p></div>
+                <div class="btn__next">
+                    <p class="btn__next__text">Start Game</p>
+                </div>
             </div>
-        </div> 
+        </div>
+        <div id="namepage">
+            <div id="container">
+                <div id="container__img"><img src="img/logo.svg"></div>
+                <div class="texts">Hello.<br>What is your name?</br></div>
+            </div>
+            <div id="textbox">
+                <p id="label">Enter your name.</p>
+                <input type="text" id="textbox__input" name="name" placeholder="First Name">
+            </div>
 
-    </div>
+            <div class="btn__next__holder" onclick="storeName()">
+                <div class="btn__next">
+                    <p class="btn__next__text">Next</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="intropage">
+
+            <button onclick=backwardDeduct() class="back_button">
+                <img src="img/back_icon.svg" class="back_icon">
+                <div class="button_text">Back</div>
+            </button>
+
+            <div class="image_container">
+                <img id="image_container_img" src="img/logo.svg">
+            </div>
+
+            <div id="card">
+                <div class="q__text__holder">
+                    <div class="q__text q__text__header">
+                        <p>Hello <span id="nameofuser">name</span>!<br> My name is Hoppy.</p>
+                    </div>
+                    <div id="" class="q__text q__text__desc">
+                        <p>I need your help. <br> Can you build me a car? <br> I need to get to my grandpa's house. <br>
+                            My friends will give you the car parts but,
+                            You must help them first!</p>
+                    </div>
+                </div>
+                <div onclick=forwardDeduct() class="btn__next__holder">
+                    <div id="intropage__forward" class="btn__next">
+                        <p id = "nextbutton" class="btn__next__text">Okay!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
-        
+
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>

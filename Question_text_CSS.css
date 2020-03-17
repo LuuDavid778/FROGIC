@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 450px) {
 
     .q__text {
         font-family: 'Raleway', sans-serif;
@@ -9,11 +9,16 @@
 
     .q__text__header {
         font-size: 80px;
+        margin-bottom: 5px;
     }
 
     .q__text__desc {
         font-size: 35px;
     
         width: 700px;
+    }
+
+    .q__text p {
+        margin-bottom: -40px;
     }
 }

@@ -1,32 +1,34 @@
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 450px) {
   .deductive_hint {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 75px;
+    bottom: -425px;
+    
   }
   
   .deductive_hint__ribbit {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+    top: -15px;
+    position: relative;
   }
 
   .deductive_hint__hint_border {
     border: solid #f08080 5px;
-    width: auto;
-    height: 65px;
+    height: 55px;
+    width: 400px;
     border-radius: 50px;
-    display: flex;
-    margin: 20px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 20px;
+    display: flex;
+  
   }
 
   .deductive_hint__hint_text {
-    padding: 35px;
-    font-size: 29pt;
+    font-size: 25pt;
+    position: relative;
+    top: -33px;
   }
 }

@@ -1,8 +1,9 @@
 
-@media only screen and (max-device-width: 360px){ 
+@media only screen and (max-device-width: 450px){ 
     body {
       margin: 0;
     }
+/*
    #app {
     background-color: #91ABFF;
     height: 100vh;
@@ -13,7 +14,7 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
   }
-
+*/
   .image_container {
     display: flex;
     justify-content: center;
