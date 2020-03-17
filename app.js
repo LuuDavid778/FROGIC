@@ -48,7 +48,7 @@ var deductindex = 0
             <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's learn what</br>a<b> premise </b>is first!</div>
         </div>`,
         header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
-        cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that 
+        cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that<br> 
         supports a conclusion.</p>`,
         bgColor: "#91abff",
             fontSize: "35pt",
@@ -75,6 +75,23 @@ var deductindex = 0
         
 
 
+        }, 
+
+        {
+            img: `<div id = "logotext_container" id="container">
+            <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
+            <div  id = "logotext_txt" class="texts">Let's be sure to also<br>learn <b>conclusions!</b></div>
+        </div>`,
+            header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+            cardtext: `<p id ="definition_cardtext_movedleft"> A conclusion is the <span id = "word_hl"><b> finishing statement</b></span>,<br>
+            it can be true or false!</p>
+            <div id="definition_cardtext_movedleft_topgap"></div>
+            <p id ="definition_cardtext_movedleft">Premises are what <span id = "word_hl"><b>make up a conclusion</b></span>.<br>
+            Make sure you check out the premises to<br>
+            figure out if the conclusion is <span id = "word_hl"><b>true or not!</b></span>`,
+            bgColor: "#91abff",
+            fontSize: "35pt",
+            buttontext: "Got it!"
         }
 
     ];
