@@ -1,7 +1,7 @@
 var deductindex = 0
     var deductstate = [{
             img: `<img id="image_container_img" src="img/logo.svg">`,
-            header: "<p>Hello <span id=\"nameofuser\">name</span>!<br> My name is Hoppy.</p>",
+            header: "<p>Hello <span id=\"nameofuser\"></span>!<br> My name is Hoppy.</p>",
             cardtext: "<p>I need your help. <br> Can you build me a car? <br> I need to get to my grandpa's house. <br> My friends will give you the car parts but,  You must help them first!</p>",
             bgColor: "#fdbe6c",
             fontSize: "35px",
@@ -47,13 +47,32 @@ var deductindex = 0
             <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
             <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's learn what</br>a<b> premise </b>is first!</div>
         </div>`,
-        header: `<img id= "ribbit_hintcenter" src="img/ribbit_hint.svg">`,
-        cardtext: `<p id = "definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that 
+        header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+        cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that 
         supports a conclusion.</p>`,
         bgColor: "#91abff",
             fontSize: "35pt",
             buttontext: "Got it!"
 
+        },
+
+        {
+            img:`<img src="img/dog1_sad.svg">`,
+            header:``,
+            cardtext:`<p id = "deductpage4__text">Racer is a dog.</p> <div class="deductive_hint">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+            <div class="deductive_hint__hint_border">
+                    <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
+        </div>`,
+
+
+
+
+            bgColor: "#91abff",
+            fontSize: "35pt",
+            buttontext: "Next"
+            
+        
 
 
         }
@@ -94,7 +113,7 @@ var deductindex = 0
             startGame()
             deductindex = 0 
             document.querySelector("#app").style.backgroundColor = "#91abff";   
-        } else{
+        } else {
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
         document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
@@ -112,6 +131,7 @@ var deductindex = 0
         document.getElementById("namepage").style.display = "none";
         document.getElementById("intropage").style.display = "flex";
         document.getElementById("app").style.backgroundColor = "#fdbe6c";
-        deductstate[2].header = "<p>Hey <span>" + userinput + "</span>!<br> My name is Racer.</p>"
-        deductstate[0].header = "<p>Hello <span>" + userinput + "</span>!<br> My name is Hoppy.</p>"
+        deductstate[2].header = "<p>Hey <span id=\"nameofuser\"></span>"  + "!<br> My name is Racer.</p>"
+        deductstate[0].header = "<p>Hello <span id=\"nameofuser\"></span>" + "!<br> My name is Hoppy.</p>"
     }
+

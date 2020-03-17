@@ -125,5 +125,14 @@ top: 40px;
   font-size: 40pt;
 }
 
+
+#deductpage4__text {
+
+  position: relative;
+  right: -200px;
+  width: 400px;
+  top: 150px;
+}
+
 }
 
