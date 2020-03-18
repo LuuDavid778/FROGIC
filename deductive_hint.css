@@ -7,7 +7,7 @@
     bottom: -425px;
     
   }
-  
+
   .deductive_hint__ribbit {
     width: 130px;
     height: 130px;
@@ -23,7 +23,6 @@
     justify-content: center;
     align-items: center;
     display: flex;
-  
   }
 
   .deductive_hint__hint_text {
@@ -31,4 +30,27 @@
     position: relative;
     top: -33px;
   }
+
+
+  /* For the "try again" page. */
+
+  .deductive_hint_tryAgain {
+    display: flex;
+    right: -110px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -305px;
+  }
+
+  .deductive_hint__hint_border_tryAgain {
+    border: solid #f08080 5px;
+    height: 55px;
+    width: 710px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
 }
