@@ -157,3 +157,57 @@ width: 30px;
   top: -200px;
   left: 100px;
 }
+
+
+/*--------------- "deductive_summary_top" CSS ---------------*/
+
+.summary_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  right: -220px;
+  width: 700px;
+  height: 600px;
+  top: 160px;
+}
+
+.summary_container_individual {
+  flex: 1;
+}
+
+.summary_text_top {
+  font-size: 35px;
+  color: #30363A;
+  font-weight: bold;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_text_middle {
+  color: white;
+  margin: 0px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_text_bottom {
+  font-size: 35px;
+  margin: 0px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_check_container {
+  height: 590px;
+  width: 120px;
+  position: absolute;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  top: 160px;
+}
+
+.summary_check_img {
+  flex: 1;
+}
