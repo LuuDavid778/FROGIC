@@ -211,3 +211,45 @@ width: 30px;
 .summary_check_img {
   flex: 1;
 }
+
+#intro__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro__top_caption {
+  font-size: 40pt;
+  color: white;
+  position: relative;
+  top: -100px;
+}
+
+#intro__header {
+  font-size: 35pt;
+  position: relative;
+  top: 65px;
+}
+
+#deductive_reasoning_correct{
+  position: relative;
+  top: 380px;
+  left: 25px;
+}
+
+#deductive_hint__borderline {
+  width: 740px;
+}
+
+#deductive_hint__hint_caption{
+  width: 770px;
+  position: relative;
+  left: 24px;
+
+}
+
+#deductive_hint__ribbit_correct_image{
+  width: 140px;
+  height: 140px;
+}

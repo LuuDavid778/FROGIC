@@ -9,12 +9,16 @@ var deductindex = 0
         },
 
         {
-            img: `<img src="img/mr_ribbit.svg">`,
-            header: "<p>Psst!<br> I'm Mr.Ribbit.</p>",
-            cardtext: "<p>Along our journey, I'll be<br>teaching you the methods of reasoning!</p>",
-            bgColor: "#fdbe6c",
-            fontSize: "35pt",
-            buttontext: "Start Learning"
+            img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/dog1_happy_bone.svg"></div>`,
+            header: `<p id="intro__header">Yes, Racer most likely lost his bone.</p>`,
+            cardtext: `<div class="deductive_hint" id="deductive_reasoning_correct">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="deductive_hint__ribbit_correct_image">
+            <div class="deductive_hint__hint_border" id="deductive_hint__borderline">
+                    <p class="deductive_hint__hint_text" id="deductive_hint__hint_caption">Hint: If 2 premises are true, conclusion is true!</p>
+        </div>`,
+            bgColor: "#91abff",
+            fontSize: "10pt",
+            buttontext: "Receive your prize"
 
         },
 
