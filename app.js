@@ -1,3 +1,5 @@
+
+var back_button_state = true
 var deductindex = 0
 var deductstate = [{
         img: `<img id="image_container_img" src="img/logo.svg">`,
@@ -123,25 +125,41 @@ var deductstate = [{
 
     },
 
-    // {
-    //     img: `<div id = "logotext_container" id="container">
-    //     <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
-    //     <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
-    //     </div>
-    //     <div id="logotext_topPosition" class="texts">Really?</div>`,
-    //     header: ``,
-    //     cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
-    //     <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
-    //     <div id="definition_cardtext_movedleft_topgap"></div>
-    //     <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
-    //     <div class="deductive_hint_tryAgain">
-    //     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-    //     <div class="deductive_hint__hint_border_tryAgain">
-    //     <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
-    //     </div>`
-    // }
+    {
+        img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
+        <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
+        </div>
+        <div id="logotext_topPosition" class="texts">Really?</div>`,
+        header: ``,
+        cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
+        <div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
+        <div class="deductive_hint_tryAgain">
+        <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+        <div class="deductive_hint__hint_border_tryAgain">
+        <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
+        </div>`,
+
+        buttontext: "Try again"
+    },
+
+{
+ img: "review",
+ header: "review",
+ cardtext: "review",
+ buttontext: "review"
 
 
+
+
+},
+
+
+
+
+// 11 
     // <div id="deductive_short_shummary">
     //     <div class="deductive_short_shummary__ribbit">
     //     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
@@ -157,7 +175,7 @@ var deductstate = [{
 
     //     </div>`
 
-  
+
     {
         img: `<div id = "logotext_container" id="container">
             <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
@@ -201,12 +219,19 @@ function forwardDeduct() {
 
     if (deductindex === 7) {
         document.getElementById("btn__change_div").innerHTML = `<div class="yesno_button_container">
-        <div class="yesno_btn__nextyes" onclick = "CheckYesNo(1)"><p class="yesno_btn__next__text" id="yesno_btn_yes">Yes</p></div>
-        <div class="yesno_btn__nextno" onclick = "CheckYesNo(2)" ><p class="yesno_btn__next__text" id="yesno_btn_no">No</p></div>
+        <div class="yesno_btn__nextyes" onclick = "YesButton()"><p class="yesno_btn__next__text" id="yesno_btn_yes">Yes</p></div>
+        <div class="yesno_btn__nextno" onclick = "NoButton()" ><p class="yesno_btn__next__text" id="yesno_btn_no">No</p></div>
     </div>`
     }
 
 
+    if (back_button_state === false) {
+        document.getElementById("back_button_display").style.display = "flex";
+        back_button_state = true;
+
+    }
+
+    console.log(deductindex)
 }
 
 
@@ -239,4 +264,47 @@ function storeName() {
     document.getElementById("app").style.backgroundColor = "#fdbe6c";
     deductstate[2].header = "<p>Hey " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Racer.</p>"
     deductstate[0].header = "<p>Hello " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Hoppy.</p>"
+}
+
+function YesButton() {
+    deductindex = 8
+    document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardDeduct() class="btn__next__holder">
+<div id="intropage__forward" class="btn__next">
+    <p id="nextbutton" class="btn__next__text">Okay!</p>
+</div>
+</div>
+</div>`
+    document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+    document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+    deductindex = 9
+    
+}
+
+function NoButton(){
+    deductindex = 9
+    document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardDeduct() class="btn__next__holder">
+    <div id="intropage__forward" class="btn__next">
+        <p id="nextbutton" class="btn__next__text">Okay!</p>
+    </div>
+    </div>
+    </div>`
+        document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+        deductindex = 2
+}
+
+function RecievePrize() {
+deductindex = 10 
+document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
+document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
+document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+document.getElementById("back_button_display").style.display = "none";
+
 }

@@ -23,6 +23,12 @@
     flex-direction: column;
 }
 
+#q__img1 {
+  position: relative;
+  right: -40px;
+  width: 70%;
+  height: 70%;
+}
 
 
 }
