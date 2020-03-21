@@ -4,6 +4,7 @@
         <link href="quizstyling.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link href="quiz_q01.css" rel="stylesheet">
+        <link href="quiz_button.css" rel="stylesheet">
     </head>
     </head>
     <body>
@@ -45,11 +46,18 @@
             </div>
 
             <div id="card">
-                    <div onclick = ChosenOption(1) id="quiz_button_1" id = "quiz_buttons" class="btn__next"><p class="btn__next__text">Question 1</p></div>
-                    <div onclick = ChosenOption(2) id="quiz_button_2" id = "quiz_buttons" class="btn__next"><p class="btn__next__text">Question 2</p></div>
-                    <div onclick = ChosenOption(3) id="quiz_button_3" id = "quiz_buttons" class="btn__next"><p class="btn__next__text">Question 3</p></div>
-                    <div id="buttons_submit" id = "quiz_buttons" class="btn__next"><p class="btn__next__text">Submit</p></div>
-            </div>
+           
+                    <div class="quiz_button__text">What is the following example?</div>
+                    <div id="quiz_button__div1">
+                    <button onclick="ChosenOption(1)" class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options">A</span> Inductive Reasoning</button>
+                </div>
+                <div id="quiz_button__div2">
+                    <button onclick="ChosenOption(2)"class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options">B</span> Abductive Reasoning</button>
+                </div>
+                <div id="quiz_button__div3">
+                    <button onclick="ChosenOption(3)" class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options">C</span> Deductive Reasoning</button>
+                </div>
+            
    
 
 
