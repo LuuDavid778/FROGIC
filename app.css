@@ -253,3 +253,36 @@ width: 30px;
   width: 140px;
   height: 140px;
 }
+
+#deductive_short_shummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px !important;
+  width: 800px;
+  position: relative;
+  top: -20px;
+}
+
+#deductive_short_shummary__ribbit {
+  position: relative;
+  bottom: 50px;
+  
+}
+
+.deductive_short_shummary__pink {
+  color: #F08080;
+}
+.deductive_short_shummary__bold {
+  color: black;
+  font-weight: 900;
+}
+
+.deductive_short_shummary__last_text {
+  font-size: 43pt;
+  font-weight: 900;
+  color: #F08080;
+}
+.deductive_short_shummary__texts  {
+  font-size: 12pt !important;
+}
