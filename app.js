@@ -225,6 +225,10 @@ function forwardDeduct() {
             <p id="nextbutton" class="btn__next__text">Okay!</p>
         </div>
     </div>`;
+        document.getElementById("back_button_display").innerHTML = `<button id= "back_button_display" onclick=backwardIeduct() class="back_button">
+        <img src="img/back_icon.svg" class="back_icon">
+        <div class="button_text">Back</div>
+    </button>`;
         
 
     }
@@ -312,16 +316,45 @@ function RecievePrize() {
 
 //Inductive Reasoning
 
-var inductindex = 0
+var inductindex = -1
 var inductstate = [ {
-    image:``,
-    header:`<p>asfsef</p>`,
-    cardtext: ``,
-    bgColor: ``,
-    fontSize: ``,
-    bottomtext: ``,
+    image:`<img src="img/panda_sad.svg">`,
+    header:"<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Timothy.</p>",
+    cardtext: `<p id="induct_1__cardtext">I’m starving. <br> Can you help me?</p>`,
+    bgColor: "#4DC1AE",
+    fontSize: "35pt",
+    bottomtext: "Help Timothy",
 
-}
+},
+
+{
+    image:`<img src="img/panda.svg">`,
+    header:``,
+    cardtext: `<p id="inductive_2__cardtext">Thimony has no food.</p>
+    <div class="deductive_hint">
+    <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+    <div class="deductive_hint__hint_border">
+            <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
+    </div>`,
+    bgColor: `#4DC1AE`,
+    fontSize: `35pt`,
+    bottomtext: "Next",
+
+},
+
+{
+    img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+        <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's go over </br>a<b> premise </b>one more time!</div>
+    </div>`,
+    header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+    cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that<br> 
+    supports a conclusion.</p>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Got it!"
+
+},
 
 ];
 
@@ -335,7 +368,7 @@ function forwardInduct() {
     document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
-    document.getElementById("app").style.backgroundColor = "#91abff";
+    document.getElementById("app").style.backgroundColor = "#4DC1AE";
 
 
 }
@@ -347,7 +380,7 @@ function backwardInduct() {
         resetPage()
         startGame()
         inductindex = 0
-        document.querySelector("#app").style.backgroundColor = "#91abff";
+        document.querySelector("#app").style.backgroundColor = "#4DC1AE";
     } else {
     document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;

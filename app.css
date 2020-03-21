@@ -351,3 +351,14 @@ width: 30px;
 
 /*--------------- "inductive_reasoning" CSS ---------------*/
 
+.induct_1__cardtext {
+  position: relative;
+  top: 200px;
+}
+
+#inductive_2__cardtext {
+  position: relative;
+  left: 140px;
+  top: 130px;
+}
+
