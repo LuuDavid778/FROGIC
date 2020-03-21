@@ -16,7 +16,9 @@ var deductindex = 0
             fontSize: "35pt",
             buttontext: "Start Learning"
 
+
         },
+
         {
             img: `<img src="img/dog1_sad.svg">`, 
             header: "<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Racer.</p>",
@@ -64,7 +66,10 @@ var deductindex = 0
             <div class="deductive_hint__hint_border">
                     <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
         </div>`,
-        
+
+
+
+
             bgColor: "#91abff",
             fontSize: "35pt",
             buttontext: "Next"
@@ -90,9 +95,18 @@ var deductindex = 0
             fontSize: "35pt",
             buttontext: "Got it!"
         },
+        {
+        img: `<img src="img/reward_page_image.svg" id="reward_page__image">`,
+        header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+        cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
+        <p>You got the wheels for the car. Let's review!</p>`,
+        bgColor: "#91abff",
+        fontSize: "35pt",
+        buttontext: "Review"
+        },
 
-// insert Aksel's part here! (1)
-
+        
+ // insert Aksel's part here! (1)
         
         {
             img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/dog1_happy_bone.svg"></div>`,

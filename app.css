@@ -283,6 +283,39 @@ width: 30px;
   font-weight: 900;
   color: #F08080;
 }
+
 .deductive_short_shummary__texts  {
   font-size: 12pt !important;
 }
+
+
+/*--------------- "reward_page" CSS ---------------*/
+
+
+#reward_page__image {
+  position: relative;
+  top: 300px !important;
+  width: 1000px !important;
+  height: 1000px !important;
+
+  margin: 0 -50%;
+
+
+}
+
+
+#reward_page__hoppy {
+  width:180px;
+  height: 180px;
+  position:relative;
+  left: 300px;
+  top: 30px;
+}
+
+.reward_page__text {
+  position:relative;
+  left: 70px;
+}
+
+
+/*--------------- "inductive_reasoning" CSS ---------------*/
