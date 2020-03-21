@@ -36,9 +36,9 @@ var quiz_state = [{
             </div>
         </div>
     </div>`,
-        selection1: `<button onclick = ChosenOption(1) class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options">A</span> Inductive Reasoning</button>`,
-        selection2: `<button onclick = ChosenOption(2) class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options">A</span> Abductive Reasoning</button>`,
-        selection3: `<button onclick = ChosenOption(3) class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options">A</span> Deductive Reasoning</button>`,
+        selection1: `<button onclick = ChosenOption(1) class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options1">A</span> Inductive Reasoning</button>`,
+        selection2: `<button onclick = ChosenOption(2) class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">A</span> Abductive Reasoning</button>`,
+        selection3: `<button onclick = ChosenOption(3) class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options3">A</span> Deductive Reasoning</button>`,
         answer: 1
     },
     {
@@ -77,9 +77,9 @@ var quiz_state = [{
             </div>
         </div>
     </div>`,
-        selection1: `<button onclick = ChosenOption(1) class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options">A</span> Premise</button>`,
-        selection2: `<button onclick = ChosenOption(2) class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options">A</span> Arguement</button>`,
-        selection3: `<button onclick = ChosenOption(3) class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options">A</span> Conclusion</button>`,
+        selection1: `<button onclick = ChosenOption(1) class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options1">A</span> Premise</button>`,
+        selection2: `<button onclick = ChosenOption(2) class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">A</span> Arguement</button>`,
+        selection3: `<button onclick = ChosenOption(3) class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options3">A</span> Conclusion</button>`,
         answer: 3
     }
 
@@ -96,7 +96,7 @@ function ChosenOption(n) {
         console.log(n)
         document.getElementById("quiz_button__" + n).style.backgroundColor = "#66bf39"
         document.getElementById("quiz_button__" + n).style.color = "white"
-        document.querySelector(".quiz_button__options").style.backgroundColor = "#57a130"
+        document.querySelector(".quiz_button__options" + n).style.backgroundColor = "#57a130"
         quiz_counter++
         setTimeout(function () {
             advanceQuiz()
