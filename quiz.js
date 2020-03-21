@@ -95,6 +95,8 @@ function ChosenOption(n) {
     if (n === quiz_state[quiz_counter].answer) {
         console.log(n)
         document.getElementById("quiz_button__" + n).style.backgroundColor = "#66bf39"
+        document.getElementById("quiz_button__" + n).style.color = "white"
+        document.querySelector(".quiz_button__options").style.backgroundColor = "#57a130"
         quiz_counter++
         setTimeout(function () {
             advanceQuiz()
@@ -107,6 +109,8 @@ function ChosenOption(n) {
             document.getElementById("quiz_button__1").style.backgroundColor = "#e9e9e9"
             document.getElementById("quiz_button__2").style.backgroundColor = "#e9e9e9"
             document.getElementById("quiz_button__3").style.backgroundColor = "#e9e9e9"
+           
+        
         }, 2000);
     }
 }

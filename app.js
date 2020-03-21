@@ -1,6 +1,5 @@
-
-var back_button_state = true
 var deductindex = 0
+var back_button_state = true
 var deductstate = [{
         img: `<img id="image_container_img" src="img/logo.svg">`,
         header: "<p>Hello <span id=\"nameofuser\"></span>!<br> My name is Hoppy.</p>",
@@ -18,12 +17,14 @@ var deductstate = [{
         fontSize: "35pt",
         buttontext: "Start Learning"
 
+
     },
+
     {
         img: `<img src="img/dog1_sad.svg">`,
         header: "<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Racer.</p>",
         cardtext: "<p>I've lost something but I can't remember... <br>Can you help me figure out what I lost?</p>",
-        bgColor: "#91abff",
+        bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Help Racer"
 
@@ -38,7 +39,7 @@ var deductstate = [{
             <div class="deductive_hint__hint_border">
                     <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
         </div>`,
-        bgColor: "#91abff",
+        bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Next"
 
@@ -52,7 +53,7 @@ var deductstate = [{
         header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
         cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that<br> 
         supports a conclusion.</p>`,
-        bgColor: "#91abff",
+        bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Got it!"
 
@@ -66,8 +67,7 @@ var deductstate = [{
             <div class="deductive_hint__hint_border">
                     <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
         </div>`,
-
-        bgColor: "#91abff",
+        bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Next"
 
@@ -88,7 +88,7 @@ var deductstate = [{
             <p id ="definition_cardtext_movedleft">Premises are what <span id = "word_hl"><b>make up a conclusion</b></span>.<br>
             Make sure you check out the premises to<br>
             figure out if the conclusion is <span id = "word_hl"><b>true or not!</b></span>`,
-        bgColor: "#91abff",
+        bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Got it!"
     },
@@ -107,10 +107,9 @@ var deductstate = [{
             <div class="deductive_hint__hint_border">
             <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
             </div>`,
-        buttontext: ""
+        buttontext: "",
+        bgColor: "#67abe8"
     },
-
-
     {
         img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/dog1_happy_bone.svg"></div>`,
         header: `<p id="intro__header">Yes, Racer most likely lost his bone.</p>`,
@@ -141,66 +140,43 @@ var deductstate = [{
         <div class="deductive_hint__hint_border_tryAgain">
         <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
         </div>`,
-
         buttontext: "Try again"
     },
 
-{
- img: "review",
- header: "review",
- cardtext: "review",
- buttontext: "review"
-
-
-
-
-},
-
-
-
-
-
-
-
     {
-        img: `<div id = "logotext_container" id="container">
-            <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
-            <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
-            </div>
-            <div id="logotext_topPosition" class="texts">Really?</div>`,
+        img: `<img src="img/reward_page_image.svg" id="reward_page__image">`,
+        header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+        cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
+        <p>You got the wheels for the car. Let's review!</p>`,
+        bgColor: "#91abff",
+        fontSize: "35pt",
+        buttontext: "Review"
+    },
+    {
+        img: ``,
         header: ``,
-        cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
-            <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
-            <div id="definition_cardtext_movedleft_topgap"></div>
-            <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
-            <div class="deductive_hint_tryAgain">
+        cardtext: `<div id="deductive_short_shummary">
+            <div class="deductive_short_shummary__ribbit">
             <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-            <div class="deductive_hint__hint_border_tryAgain">
-            <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
-            </div>`
-    }
+            </div>
+            <div class="deductive_short_shummary__texts">
+            <p id="intro__header2">You need <span class="deductive_short_shummary__pink">2 premises</span> to make a conclusion.<br/>
+            Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.<br/>
+            Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.<br/>
+            Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
+            Lastly, your conclusion should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
+            All together, you used <br><span class="deductive_short_shummary__last_text">Deductive reasoning!</span></p>
+            </div>
+
+            </div>`,
+        bgColor: "#5dade7",
+        fontSize: "10pt",
+        buttontext: "I got it!"
+
+    },
 
 
 
-
-    // 11 
-    // <div id="deductive_short_shummary">
-    //     <div class="deductive_short_shummary__ribbit">
-    //     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-    //     </div>
-    //     <div class="deductive_short_shummary__texts">
-    //     <p id="intro__header">You need <span class="deductive_short_shummary__pink">2 premises</span> to make a conclusion.<br/>
-    //     Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.<br/>
-    //     Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.<br/>
-    //     Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
-    //     Lastly, your conclusion should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
-    //     All together, you used <span class="deductive_short_shummary__last_text">Deductive reasoning!</span></p>
-    //     </div>
-
-    //     </div>`
-
-
-    
 ];
 
 function resetPage() {
@@ -223,7 +199,7 @@ function forwardDeduct() {
     document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
     document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
     document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
-    document.getElementById("app").style.backgroundColor = "#91abff"
+    document.getElementById("app").style.backgroundColor = deductstate[deductindex].bgColor;
 
     if (deductindex === 7) {
         document.getElementById("btn__change_div").innerHTML = `<div class="yesno_button_container">
@@ -239,6 +215,12 @@ function forwardDeduct() {
 
     }
 
+    if (deductindex === 10) {
+        document.getElementById("back_button_display").style.display = "none";
+    }
+
+
+
     console.log(deductindex)
 }
 
@@ -250,7 +232,7 @@ function backwardDeduct() {
         resetPage()
         startGame()
         deductindex = 0
-        document.querySelector("#app").style.backgroundColor = "#91abff";
+        document.querySelector("#app").style.backgroundColor = deductstate[deductindex].bgColor
     } else {
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
@@ -287,10 +269,10 @@ function YesButton() {
     document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
     document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
     deductindex = 9
-    
+
 }
 
-function NoButton(){
+function NoButton() {
     deductindex = 9
     document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardDeduct() class="btn__next__holder">
     <div id="intropage__forward" class="btn__next">
@@ -298,21 +280,21 @@ function NoButton(){
     </div>
     </div>
     </div>`
-        document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
-        document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
-        document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
-        document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
-        document.getElementById("back_button_display").style.display = "none";
-        back_button_state = false
-        deductindex = 2
+    document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+    document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+    document.getElementById("back_button_display").style.display = "none";
+    back_button_state = false
+    deductindex = 2
 }
 
 function RecievePrize() {
-deductindex = 10 
-document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
-document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
-document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
-document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
-document.getElementById("back_button_display").style.display = "none";
+    deductindex = 10
+    document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
+    document.querySelector(".q__text__desc").innerHTML = deductstate[deductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
+    document.getElementById("back_button_display").style.display = "none";
 
 }
