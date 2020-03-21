@@ -159,21 +159,7 @@ var deductstate = [{
 
 
 
-// 11 
-    // <div id="deductive_short_shummary">
-    //     <div class="deductive_short_shummary__ribbit">
-    //     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-    //     </div>
-    //     <div class="deductive_short_shummary__texts">
-    //     <p id="intro__header">You need <span class="deductive_short_shummary__pink">2 premises</span> to make a conclusion.<br/>
-    //     Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.<br/>
-    //     Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.<br/>
-    //     Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
-    //     Lastly, your conclusion should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
-    //     All together, you used <span class="deductive_short_shummary__last_text">Deductive reasoning!</span></p>
-    //     </div>
 
-    //     </div>`
 
 
     {
@@ -193,6 +179,28 @@ var deductstate = [{
             <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
             </div>`
     }
+
+
+
+
+    // 11 
+    // <div id="deductive_short_shummary">
+    //     <div class="deductive_short_shummary__ribbit">
+    //     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+    //     </div>
+    //     <div class="deductive_short_shummary__texts">
+    //     <p id="intro__header">You need <span class="deductive_short_shummary__pink">2 premises</span> to make a conclusion.<br/>
+    //     Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.<br/>
+    //     Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.<br/>
+    //     Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
+    //     Lastly, your conclusion should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
+    //     All together, you used <span class="deductive_short_shummary__last_text">Deductive reasoning!</span></p>
+    //     </div>
+
+    //     </div>`
+
+
+    
 ];
 
 function resetPage() {
