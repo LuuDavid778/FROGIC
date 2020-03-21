@@ -219,6 +219,16 @@ function forwardDeduct() {
         document.getElementById("back_button_display").style.display = "none";
     }
 
+    if (deductindex === 11) {
+        document.getElementById("btn__change_div").innerHTML = `<div onclick=forwardInduct() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Okay!</p>
+        </div>
+    </div>`;
+        
+
+    }
+
 
 
     console.log(deductindex)
@@ -297,4 +307,54 @@ function RecievePrize() {
     document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
     document.getElementById("back_button_display").style.display = "none";
 
+}
+
+
+//Inductive Reasoning
+
+var inductindex = 0
+var inductstate = [ {
+    image:``,
+    header:`<p>asfsef</p>`,
+    cardtext: ``,
+    bgColor: ``,
+    fontSize: ``,
+    bottomtext: ``,
+
+}
+
+];
+
+
+
+function forwardInduct() {
+    inductindex++
+    console.log(inductindex)
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = "#91abff";
+
+
+}
+
+function backwardInduct() {
+    inductindex--
+    console.log(inductindex)
+    if (inductindex === -1) {
+        resetPage()
+        startGame()
+        inductindex = 0
+        document.querySelector("#app").style.backgroundColor = "#91abff";
+    } else {
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = inductstate[inductindex].bgColor;
+    }
+    
 }
