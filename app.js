@@ -310,6 +310,7 @@ function RecievePrize() {
     document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
     document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
     document.getElementById("back_button_display").style.display = "none";
+    back_button_state = false
 
 }
 
@@ -318,19 +319,18 @@ function RecievePrize() {
 
 var inductindex = -1
 var inductstate = [ {
-    image:`<img src="img/panda_sad.svg">`,
+    img:`<img src="img/panda_sad.svg">`,
     header:"<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Timothy.</p>",
     cardtext: `<p id="induct_1__cardtext">I’m starving. <br> Can you help me?</p>`,
     bgColor: "#4DC1AE",
     fontSize: "35pt",
     bottomtext: "Help Timothy",
-
 },
 
 {
-    image:`<img src="img/panda.svg">`,
+    img:`<img src="img/panda_sad.svg">`,
     header:``,
-    cardtext: `<p id="inductive_2__cardtext">Thimony has no food.</p>
+    cardtext: `<p id="inductive_2__cardtext">Timothy has no food.</p>
     <div class="deductive_hint">
     <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
     <div class="deductive_hint__hint_border">
@@ -369,6 +369,11 @@ function forwardInduct() {
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
+
+    if (back_button_state === false) {
+        document.getElementById("back_button_display").style.display = "flex";
+        back_button_state = true
+    }
 
 
 }
