@@ -1,0 +1,44 @@
+@media only screen and (max-device-width: 450px) {
+    .yesno_button_container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .yesno_btn__nextyes {
+        width: 350px;
+        height:130px;
+        border-radius: 100px;
+        background-color: #F08080;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 150px;
+        left: 100px;
+    
+    }
+
+    .yesno_btn__nextno {
+        width: 350px;
+        height:130px;
+        border-radius: 100px;
+        background-color: #F08080;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 150px;
+        right: 100px;
+    
+    }
+
+
+    .yesno_btn__next__text {
+        font-size: 50px;
+        color: white;
+        font-weight: bolder;
+    }
+
+
+
+}
