@@ -311,3 +311,7 @@ width: 30px;
 .deductive_short_shummary__texts  {
   font-size: 12pt !important;
 }
+
+#btn__change_div {
+  display: flex;
+}
