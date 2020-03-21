@@ -142,7 +142,38 @@ var deductindex = 0
 
         //     </div>`
 
-
+{
+            img:`<div id = "logotext_container" id="container">
+            <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
+            <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
+            </div>
+            <div id="logotext_topPosition_questionMark">?</div>`,
+            header:``,
+            cardtext:`<div id="definition_cardtext_movedleft_topgap"></div>
+            <p id ="definition_cardtext_part6">Did Racer possibly lose his bone?</p>
+            <div class="deductive_hint_part6">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+            <div class="deductive_hint__hint_border">
+            <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
+            </div>`,
+        },
+        {
+            img: `<div id = "logotext_container" id="container">
+            <div  id="container__img"><img id="logotext_img" src="img/dog1_sad.svg"></div>
+            <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
+            </div>
+            <div id="logotext_topPosition" class="texts">Really?</div>`,
+            header: ``,
+            cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+            <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
+            <div id="definition_cardtext_movedleft_topgap"></div>
+            <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
+            <div class="deductive_hint_tryAgain">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+            <div class="deductive_hint__hint_border_tryAgain">
+            <p class="deductive_hint__hint_text">Hint: If 2 premises are true, conclusion is true!</p>
+            </div>`
+        }
     ];
 
     function resetPage() {
