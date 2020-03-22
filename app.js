@@ -441,11 +441,11 @@ var inductstate = [ {
     buttontext: "Try again"
 },
 
-{ //needed to be changed for the inductive 
-    img: `<img src="img/reward_page_image.svg" id="reward_page__image">`,
+{
+    img: `<img src="img/reward_page_image2.svg" id="reward_page__image">`,
     header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
     cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
-    <p>You got the wheels for the car. Let's review!</p>`,
+    <p>You got body for the car.<br>Go over what you did with<br>Mr. Big.!</p>`,
     bgColor: "#4DC1AE",
     fontSize: "35pt",
     buttontext: "Review"
