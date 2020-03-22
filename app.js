@@ -230,6 +230,10 @@ function forwardDeduct() {
     document.getElementById("back_button_display").style.display = "none"; 
 
     }
+    if (deductindex === 7) {
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    }
 
 
 
@@ -403,7 +407,7 @@ var inductstate = [ {
             </div>
         </div>`,
     buttontext: "",
-    bgColor: "#67abe8"
+    bgColor: "#4DC1AE"
 },
 
 {
@@ -414,7 +418,7 @@ var inductstate = [ {
         <div class="deductive_hint__hint_border" id="deductive_hint__borderline">
                 <p class="deductive_hint__hint_text" id="deductive_hint__hint_caption">Hint: The conclusion wasn't logical, great job!</p>
     </div>`,
-    bgColor: "#91abff",
+    bgColor: "#4DC1AE",
     fontSize: "10pt",
     buttontext: "Receive your prize"
 
@@ -442,7 +446,7 @@ var inductstate = [ {
     header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
     cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
     <p>You got the wheels for the car. Let's review!</p>`,
-    bgColor: "#91abff",
+    bgColor: "#4DC1AE",
     fontSize: "35pt",
     buttontext: "Review"
 },
@@ -472,6 +476,10 @@ function forwardInduct() {
         <div class="yesno_btn__nextno" onclick = "InductNoButton()"><p class="yesno_btn__next__text" id="yesno_btn_no">No</p></div>
     </div>`
     }
+    if (inductindex === 5) {
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    }
 
 }
 
@@ -482,7 +490,7 @@ function backwardInduct() {
         document.getElementById("back_button_display").style.display = "none";
         induct_back_button_state = false;
     }  
-    
+
     document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
     document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
