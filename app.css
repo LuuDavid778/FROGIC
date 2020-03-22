@@ -367,7 +367,7 @@ width: 30px;
   font-weight: 900;
 }
 
-#inductpage4__text {
+#inductive_4__text {
   width: 700px;
   position: relative;
   left: 60px;
@@ -378,12 +378,15 @@ width: 30px;
 #inductive_4__hint {
   width: 600px;
   position:relative;
-  left: 30px;
-  top: -35px
+  left: 100px;
+  top: -25px
 }
 
 #inductive_4__hint_border {
-  width: 500px;
+  width: 480px;
+  position: relative;
+  top: -150px;
+  left: 75px;
 }
 
 #inductive_4__image {
@@ -394,5 +397,13 @@ width: 30px;
   align-items: center;
   position: absolute;
   bottom: -90px;
+}
+
+#inductive_4__hint_ribbit {
+  width: 130px;
+  height: 130px;
+  top: -60px;
+  position: relative;
+  left: -70px;
 }
 

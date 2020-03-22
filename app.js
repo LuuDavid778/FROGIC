@@ -356,11 +356,13 @@ var inductstate = [ {
 {
     img: `<img src="img/two_pandas.svg" id="inductive_4__image">`,
     header: ``,
-    cardtext: `<p id = "inductpage4__text">Timothy's brother also has no food.</p> <div class="deductive_hint">
-            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-            <div class="deductive_hint__hint_border" id="inductive_4__hint_border">
-                    <p class="deductive_hint__hint_text" id="inductive_4__hint">Hint: This is also a premise!</p>
-        </div>`,
+    cardtext: `<p id = "inductive_4__text">Timothy's brother also has no food.</p> <div class="deductive_hint">
+            <div id="inductive_4__hint">
+                <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="inductive_4__hint_ribbit">
+                <div class="deductive_hint__hint_border" id="inductive_4__hint_border">
+                <p class="deductive_hint__hint_text" id="inductive_4__hint_text">Hint: This is also a premise!</p>
+                </div>
+            </div>`,
     bgColor: `#4DC1AE`,
     fontSize: "35pt",
     buttontext: "Next"
@@ -384,6 +386,25 @@ var inductstate = [ {
     fontSize: "35pt",
     buttontext: "Got it!"
 },
+
+{
+    img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/three_pandas.svg"></div>
+        <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
+        </div>
+        <div id="logotext_topPosition_questionMark">?</div>`,
+    header: ``,
+    cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext_part6">Do all the panda's in the world have no food?</p>
+        <div class="deductive_hint_part6">
+        <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+        <div class="deductive_hint__hint_border">
+        <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
+        </div>`,
+    buttontext: "",
+    bgColor: "#67abe8"
+},
+
 
 
 ];
