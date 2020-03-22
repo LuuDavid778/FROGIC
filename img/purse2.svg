@@ -10,5 +10,10 @@
       <circle id="Ellipse_75" data-name="Ellipse 75" cx="29.709" cy="29.709" r="29.709" transform="matrix(0.526, -0.851, 0.851, 0.526, 72.002, 125.619)" fill="none" stroke="#c9b871" stroke-miterlimit="10" stroke-width="4"/>
       <text id="_" data-name="$" transform="translate(99.475 130.767)" fill="#c9b871" font-size="46" font-family="Helvetica"><tspan x="0" y="0">$</tspan></text>
     </g>
+    <g id="coin-2" data-name="coin" transform="translate(6035.998 8367.018)">
+      <circle id="Ellipse_74-2" data-name="Ellipse 74" cx="34.375" cy="34.375" r="34.375" transform="translate(78.501 81.588)" fill="#f2df81"/>
+      <circle id="Ellipse_75-2" data-name="Ellipse 75" cx="29.709" cy="29.709" r="29.709" transform="matrix(0.526, -0.851, 0.851, 0.526, 72.002, 125.619)" fill="none" stroke="#c9b871" stroke-miterlimit="10" stroke-width="4"/>
+      <text id="_2" data-name="$" transform="translate(99.475 130.767)" fill="#c9b871" font-size="46" font-family="Helvetica"><tspan x="0" y="0">$</tspan></text>
+    </g>
   </g>
 </svg>

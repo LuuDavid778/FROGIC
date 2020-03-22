@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="528.961" height="285.189" viewBox="0 0 528.961 285.189">
+  <g id="Group_1201" data-name="Group 1201" transform="translate(-6251 -9697)">
+    <g id="Group_1196" data-name="Group 1196" transform="translate(-17 68.489)">
+      <g id="little_girl" transform="translate(6515 9628.511)">
+        <path id="Path_351" data-name="Path 351" d="M271.014,336.1c-70.518,0-129.454-41.631-129.454-124.611,0-41.773,71.283-61.512,129.454-61.512,56.953,0,132.966,20.957,132.966,61.966C403.979,304.951,341.5,336.1,271.014,336.1Z" transform="translate(-131.591 -92.461)" fill="#4c4c4c"/>
+        <ellipse id="Ellipse_76" data-name="Ellipse 76" cx="11.753" cy="16.624" rx="11.753" ry="16.624" transform="translate(0 88.927)" fill="#eac6a9"/>
+        <path id="Path_352" data-name="Path 352" d="M254.287,198.37C197.646,198.37,151.54,238.9,151.54,289H357.035C357.035,238.9,311.042,198.37,254.287,198.37Z" transform="translate(-113.307 -3.807)" fill="#c59ed8"/>
+        <ellipse id="Ellipse_77" data-name="Ellipse 77" cx="11.753" cy="16.624" rx="11.753" ry="16.624" transform="translate(258.454 88.927)" fill="#eac6a9"/>
+        <circle id="Ellipse_78" data-name="Ellipse 78" cx="46.984" cy="46.984" r="46.984" transform="translate(93.996 157.548)" fill="#ddbea8"/>
+        <path id="Path_353" data-name="Path 353" d="M387.312,199.516c-8.808-17.191-61.682-81.705-115.8-51.487-63.353-26.423-106.514,34.778-117.474,51.487l-8.5-2.039a98.869,98.869,0,0,0-3.4,25.659c0,62.305,57.859,112.546,129.227,112.546S400.594,285.3,400.594,223.135a99.778,99.778,0,0,0-3.115-24.582Z" transform="translate(-130.528 -110.589)" fill="#e8c0aa"/>
+        <path id="Path_354" data-name="Path 354" d="M385.022,218.6l10.309-.963c-12.886-50.326-64.43-87.964-126.112-87.964-61.229,0-112.49,37.1-125.829,86.888l8.5,2.039c4.786-7.307,70.264-19.824,88.729-52.761C289.355,206.221,377.347,218.6,385.022,218.6Z" transform="translate(-128.238 -129.67)" fill="#4c4c4c"/>
+        <path id="Path_355" data-name="Path 355" d="M183.28,173.65c2.634,8.355,22.005,8.5,25.715,0" transform="translate(-55.157 -49.096)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <ellipse id="Ellipse_79" data-name="Ellipse 79" cx="5.381" cy="8.609" rx="5.381" ry="8.609" transform="translate(85.245 85.981)"/>
+        <ellipse id="Ellipse_80" data-name="Ellipse 80" cx="5.381" cy="8.609" rx="5.381" ry="8.609" transform="translate(183.178 85.981)"/>
+        <line id="Line_79" data-name="Line 79" x1="16.284" transform="translate(82.498 122.175)" fill="none" stroke="#e07070" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_80" data-name="Line 80" x1="16.284" transform="translate(180.431 122.175)" fill="none" stroke="#e07070" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="calendar_02" transform="translate(6151.81 9637.36)">
+      <path id="Path_358" data-name="Path 358" d="M99.19,267.989a22.411,22.411,0,0,0,22.352,22.352H288.837a22.411,22.411,0,0,0,22.352-22.352V170.9h-212Z" transform="translate(0 10.881)" fill="#eaeaea"/>
+      <path id="Path_359" data-name="Path 359" d="M288.837,122.6H121.542A22.422,22.422,0,0,0,99.19,144.952v33.761h212V144.952A22.422,22.422,0,0,0,288.837,122.6Z" transform="translate(0 3.067)" fill="#c59ed8"/>
+      <text id="_02" data-name="02" transform="translate(150.482 262.435)" font-size="85" font-family="CourierNewPSMT, Courier New"><tspan x="0" y="0">02</tspan></text>
+      <rect id="Rectangle_79" data-name="Rectangle 79" width="20.68" height="44.066" rx="5.65" transform="translate(268.181 103.64)" fill="#9579a5"/>
+      <rect id="Rectangle_80" data-name="Rectangle 80" width="20.68" height="44.066" rx="5.65" transform="translate(121.531 103.64)" fill="#9579a5"/>
+    </g>
+  </g>
+</svg>
