@@ -151,7 +151,30 @@ var deductstate = [{
         buttontext: "Review"
     },
     {
-        img: ``,
+        img: `<div id="deductive_short_summary_cont">
+        <div class="summary_container">
+        <div class="summary_container_individual">
+            <p class="summary_text_top">Premise 1</p>
+            <h4 class="summary_text_middle">Some dogs lose their bones.</h6>
+            <p class="summary_text_bottom">General idea</p>
+        </div>
+        <div class="summary_container_individual">
+            <p class="summary_text_top">Premise 2</p>
+            <p class="summary_text_middle">Racer is a dog.</p>
+            <p class="summary_text_bottom">Specific idea</p>
+        </div>
+        <div class="summary_container_individual">
+            <p class="summary_text_top">Conclusion</p>
+            <h4 class="summary_text_middle">Racer possibly lose his bone.</h6>
+            <p class="summary_text_bottom">Specific idea</p>
+        </div>
+    </div>
+    <div class="summary_check_container">
+        <img class="summary_check_img" src="img/correct.svg">
+        <img class="summary_check_img" src="img/correct.svg">
+        <img class="summary_check_img" src="img/wrong.svg">
+    </div>
+    </div>`,
         header: ``,
         cardtext: `<div id="deductive_short_shummary">
             <div class="deductive_short_shummary__ribbit">
@@ -452,7 +475,7 @@ var inductstate = [ {
 },
 
 {
-    img: `<img src="induct_short_summary_image.svg"`,
+    img: `<img src="img/induct_short_summary_image.svg" id="induct_short_summary_image">`,
     header: ``,
     cardtext: `<div id="deductive_short_shummary">
         <div class="deductive_short_shummary__ribbit">

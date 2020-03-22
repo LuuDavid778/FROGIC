@@ -321,6 +321,15 @@ width: 30px;
   display: flex;
 }
 
+#deductive_short_summary_cont {
+  width: 200px !important;
+  height: 200px !important;
+  position: relative;
+  top: -400px;
+  left: -370px;
+
+}
+
 
 
 
@@ -475,4 +484,16 @@ width: 30px;
   font-size: 25pt;
   position: relative;
   top: -20px !important;
+}
+
+#induct_short_summary_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -5%;
+  bottom: -80px;
+  width: 1000px;
+  height: 500px;
+  margin: 0 -140px;
 }
