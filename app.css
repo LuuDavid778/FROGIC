@@ -351,14 +351,48 @@ width: 30px;
 
 /*--------------- "inductive_reasoning" CSS ---------------*/
 
-.induct_1__cardtext {
+#induct_1__cardtext {
   position: relative;
-  top: 200px;
+  top: 80px;
+
 }
 
 #inductive_2__cardtext {
   position: relative;
   left: 140px;
   top: 130px;
+}
+
+#inductive_3__image_text {
+  font-weight: 900;
+}
+
+#inductpage4__text {
+  width: 700px;
+  position: relative;
+  left: 60px;
+  top: 150px;
+  text-align: center;
+  }
+
+#inductive_4__hint {
+  width: 600px;
+  position:relative;
+  left: 30px;
+  top: -35px
+}
+
+#inductive_4__hint_border {
+  width: 500px;
+}
+
+#inductive_4__image {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -90px;
 }
 

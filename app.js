@@ -71,9 +71,6 @@ var deductstate = [{
         fontSize: "35pt",
         buttontext: "Next"
 
-
-
-
     },
 
     {
@@ -225,7 +222,7 @@ function forwardDeduct() {
             <p id="nextbutton" class="btn__next__text">Okay!</p>
         </div>
     </div>`;
-        document.getElementById("back_button_display").innerHTML = `<button id= "back_button_display" onclick=backwardIeduct() class="back_button">
+        document.getElementById("back_button_display").innerHTML = `<button id= "back_button_display" onclick=backwardInduct() class="back_button">
         <img src="img/back_icon.svg" class="back_icon">
         <div class="button_text">Back</div>
     </button>`;
@@ -324,7 +321,7 @@ var inductstate = [ {
     cardtext: `<p id="induct_1__cardtext">I’m starving. <br> Can you help me?</p>`,
     bgColor: "#4DC1AE",
     fontSize: "35pt",
-    bottomtext: "Help Timothy",
+    buttontext: "Help Timothy",
 },
 
 {
@@ -338,14 +335,14 @@ var inductstate = [ {
     </div>`,
     bgColor: `#4DC1AE`,
     fontSize: `35pt`,
-    bottomtext: "Next",
+    buttontext: "Next",
 
 },
 
 {
     img: `<div id = "logotext_container" id="container">
         <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
-        <div  id = "logotext_txt" class="texts">Before we continue.<br>Let's go over </br>a<b> premise </b>one more time!</div>
+        <div  id = "logotext_txt" class="texts">Before we continue,<br>Let's go over a</br><b>premise</b> one more time!</div>
     </div>`,
     header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
     cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that<br> 
@@ -356,11 +353,45 @@ var inductstate = [ {
 
 },
 
+{
+    img: `<img src="img/two_pandas.svg" id="inductive_4__image">`,
+    header: ``,
+    cardtext: `<p id = "inductpage4__text">Timothy's brother also has no food.</p> <div class="deductive_hint">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+            <div class="deductive_hint__hint_border" id="inductive_4__hint_border">
+                    <p class="deductive_hint__hint_text" id="inductive_4__hint">Hint: This is also a premise!</p>
+        </div>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Next"
+
+
+},
+
+{
+    img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+        <div  id = "logotext_txt" class="texts">Let's also go over<br><b>conclusions</b> one<br>more time!</div>
+    </div>`,
+    header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+    cardtext: `<p id ="definition_cardtext_movedleft"> A conclusion is the <span id = "word_hl"><b> finishing statement</b></span>,<br>
+        it can be true or false!</p>
+        <div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext_movedleft">Premises are what <span id = "word_hl"><b>make up a conclusion</b></span>.<br>
+        Make sure you check out the premises to<br>
+        figure out if the conclusion is <span id = "word_hl"><b>true or not!</b></span>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Got it!"
+},
+
+
 ];
 
 
 
 function forwardInduct() {
+    document.getElementById("back_button_display").style.display = "flex";
     inductindex++
     console.log(inductindex)
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
