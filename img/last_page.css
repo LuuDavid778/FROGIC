@@ -1,0 +1,67 @@
+/* CSS for mobile */
+@media only screen and (max-device-width: 450px){ 
+    body {
+      margin: 0;
+    }
+   #app {
+    background-color: #91ABFF;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #last_page__header{
+      color: white;
+      font-size: 70pt;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+      top: 10px;
+  }
+
+  #last_page__car_container {
+      position: relative;
+      top: 100px;
+      width: 500px;
+      height: auto;
+
+  }
+
+  #last_page__text_container {
+      display: flex;
+      color: white;
+      font-size: 28pt;
+
+  }
+
+  #last_page__body {
+      width: 700px;
+      height: 100%;
+   
+  }
+
+  #last_page__wheel {
+      width: 600px;
+      height: 500px;
+      position: absolute;
+      
+  }
+
+  #last_page__sparkles {
+      width: 500px;
+      height: 500px;
+      position: relative;
+
+  }
+
+  #hoppy_and_grandpa_img {
+      height: 240px;
+      width: 240px;
+
+  }
+}  
