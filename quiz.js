@@ -1,6 +1,5 @@
 var quiz_counter = 0
 var quiz_state = [{
-
         question: `        <div class="q__container">
         <div class="q__progress__container">
             <h6 class="q__qnum">Question 1/4</h6>
@@ -171,7 +170,20 @@ var quiz_state = [{
 
 ]
 
-
+function barProgress(){
+    if (quiz_counter === 0){
+    document.querySelector(".progress__current").style.width = "25%";
+    }
+    else if (quiz_counter === 1){
+    document.querySelector(".progress__current").style.width = "50%";
+    }
+    else if (quiz_counter === 2){
+        document.querySelector(".progress__current").style.width = "75%";
+    }
+    else if (quiz_counter === 3){
+        document.querySelector(".progress__current").style.width = "100%";
+        }
+}
 
 var quiz_select
 
@@ -191,6 +203,7 @@ function ChosenOption(n) {
         
         setTimeout(function () {
             advanceQuiz()
+            barProgress()
         }, 2000);
         console.log(quiz_counter)
         
@@ -225,20 +238,3 @@ function advanceQuiz() {
     document.getElementById("quiz_button__div3").innerHTML = quiz_state[quiz_counter].selection3;
 
 }
-
-function barProgress(){
-    if (quiz_counter === 0){
-    document.querySelector(".progress__current").style.width = "25%";
-    }
-    else if (quiz_counter === 1){
-    document.querySelector(".progress__current").style.width = "50%";
-    }
-    else if (quiz_counter === 2){
-        document.querySelector(".progress__current").style.width = "75%";
-    }
-    else if (quiz_counter === 3){
-        document.querySelector(".progress__current").style.width = "100%";
-        }
-}
-
-barProgress();
