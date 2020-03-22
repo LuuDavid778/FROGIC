@@ -225,3 +225,20 @@ function advanceQuiz() {
     document.getElementById("quiz_button__div3").innerHTML = quiz_state[quiz_counter].selection3;
 
 }
+
+function barProgress(){
+    if (quiz_counter === 0){
+    document.querySelector(".progress__current").style.width = "25%";
+    }
+    else if (quiz_counter === 1){
+    document.querySelector(".progress__current").style.width = "50%";
+    }
+    else if (quiz_counter === 2){
+        document.querySelector(".progress__current").style.width = "75%";
+    }
+    else if (quiz_counter === 3){
+        document.querySelector(".progress__current").style.width = "100%";
+        }
+}
+
+barProgress();
