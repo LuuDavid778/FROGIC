@@ -159,9 +159,9 @@ var deductstate = [{
             </div>
             <div class="deductive_short_shummary__texts">
             <p id="intro__header2">You need <span class="deductive_short_shummary__pink">2 premises</span> to make a conclusion.<br/>
-            Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.<br/>
-            Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.<br/>
-            Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
+            Your premises must be <span class="deductive_short_shummary__pink">true</span> in order for your conclusion to be <span class="deductive_short_shummary__pink">true</span>.
+            Your <span class="deductive_short_shummary__bold">first</span> premise should be a <span class="deductive_short_shummary__pink">general idea</span>.
+            Your <span class="deductive_short_shummary__bold">second</span> premise should be a <span class="deductive_short_shummary__pink">specific idea</span>.
             Lastly, your conclusion should be a <span class="deductive_short_shummary__pink">specific idea</span>.<br/>
             All together, you used <br><span class="deductive_short_shummary__last_text">Deductive reasoning!</span></p>
             </div>
@@ -412,7 +412,7 @@ var inductstate = [ {
 
 {
     img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/panda_happy.svg"></div>`,
-    header: `<p id="intro__header">Correct! Just because two <br> panda's don't have food,<br>it doesn't mean all pandas don't.</p>`,
+    header: `<p id="intro__header">Correct! Just because two panda's <br>don't have food, it doesn't mean all pandas don't.</p>`,
     cardtext: `<div class="deductive_hint" id="inductive7__hint_cont">
         <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="deductive_hint__ribbit_correct_image">
         <div class="deductive_hint__hint_border" id="deductive_hint__borderline">
@@ -450,6 +450,39 @@ var inductstate = [ {
     fontSize: "35pt",
     buttontext: "Review"
 },
+
+{
+    img: `<img src="induct_short_summary_image.svg"`,
+    header: ``,
+    cardtext: `<div id="deductive_short_shummary">
+        <div class="deductive_short_shummary__ribbit">
+        <img src="img/ribbit_hint.svg" id="inductive_short_summary_2__ribbit">
+        </div>
+        <div class="deductive_short_shummary__texts" id="inductive_short_sunmmary__texts">
+        <p id="intro__header2">As you know, you need <span class="deductive_short_shummary__pink">2 premises</span><br>to make a conclusion.<br/>
+        Even though your premises are <span class="deductive_short_shummary__pink">true</span>,<br>your conclusion can be <span class="deductive_short_shummary__pink">false</span>.<br/>
+        Premise with <span class="deductive_short_shummary__bold">your specific idea<br></span>must come <span class="deductive_short_shummary__pink">first</span>.<br/>
+        Premise with <span class="deductive_short_shummary__bold">your general idea<br></span> must come <span class="deductive_short_shummary__pink">second</span>.<br/>
+        What you have done is called <br><span class="deductive_short_shummary__last_text">Inductive reasoning!</span></p>
+        </div>
+        </div>`,
+    bgColor: "#4DC1AE",
+    fontSize: "10pt",
+    buttontext: "I got it!"
+
+},
+
+{
+    img: `<img src="img/reward_page_image3.svg" id="reward_page__image">`,
+    header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+    cardtext: `<div class="reward_page__text"><p>Thank you!</p><br/>
+    <p>Thanks for helping us out! One last thing, we need you to colour the car although you'll need to pass this quiz first!</p>`,
+    bgColor: "#4DC1AE",
+    fontSize: "35pt",
+    buttontext: "Take the Quiz"
+},
+
+
 
 ];
 
