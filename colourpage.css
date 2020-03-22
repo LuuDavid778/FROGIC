@@ -1,0 +1,128 @@
+/* CSS for mobile */
+@media only screen and (max-device-width: 450px) {
+    body {
+        margin: 0;
+    }
+
+    #app {
+        background-color: beige;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+.carpart_container {
+  top: 200px;
+   position: absolute;
+
+}
+
+.carpart_container img {
+  width: 700px;
+  height: 100%;
+ 
+ }
+    #card {
+        display: flex;
+        height: 60%
+    }
+
+    .colourpage_colours_cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colourpage_colours {
+        border-radius: 100px;
+        width: 125px;
+        height: 125px;
+        margin: 45px;
+    }
+
+    .colourpage_colours_top_row {
+        display: flex;
+    }
+
+    .colourpage_colours_bot_row {
+        display: flex;
+    }
+
+
+
+    .colourpage_header {
+
+        width: 900px;
+        height: 200px;
+        position: absolute;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #colourpage_header_img {
+        width: 150px;
+        height: 150px;
+        margin-right: 50px;
+    }
+
+    #colourpage_header_text {
+        font-size: 25pt;
+    }
+
+#carpart_size {
+position: relative;
+top: -60px;
+}
+    .btn__next {
+        width: 75%;
+        height: 130px;
+        border-radius: 100px;
+        background-color: #F08080;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 75px;
+    }
+
+    #red {
+        background-color: #FF6262;
+    }
+
+    #orange {
+        background-color: #FFB062;
+    }
+
+    #yellow {
+        background-color: #FFFF62;
+    }
+
+    #green {
+        background-color: #9EFF62;
+    }
+
+    #cyan {
+        background-color: #94FCF8;
+    }
+
+    #blue {
+        background-color: #6268FF;
+    }
+
+    #purple {
+        background-color: #BB84FC;
+    }
+
+    #pink {
+        background-color: #FD80EA;
+    }
+
+
+
+
+}

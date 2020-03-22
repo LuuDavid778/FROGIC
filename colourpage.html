@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="card.css" rel="stylesheet">
+    <link href="Button_CSS.css" rel="stylesheet">
+    <link href="colourpage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="carpart_container"><img src="car_parts/tire_default.svg"></div>
+        <div id="card">
+
+            <div class="colourpage_header">
+                <div id="colourpage_header_img"><img src = "img/logo.svg"></div>
+                <div id="colourpage_header_text"><b>Pick your favourite colour for the wheels!</b></div>
+
+            </div>
+
+
+
+
+
+            <div class="colourpage_colours_cont">
+                <div class="colourpage_colours_top_row">
+                    <div onclick = selectWheelColour(1) class="colourpage_colours" id="red"></div>
+                    <div onclick = selectWheelColour(2) class="colourpage_colours" id="orange"></div>
+                    <div onclick = selectWheelColour(3) class="colourpage_colours" id="yellow"></div>
+                    <div onclick = selectWheelColour(4) class="colourpage_colours" id="green"></div>
+                </div>
+
+                <div class="colourpage_colours_bot_row">
+                    <div onclick = selectWheelColour(5) class="colourpage_colours" id="cyan"></div>
+                    <div onclick = selectWheelColour(6) class="colourpage_colours" id="blue"></div>
+                    <div onclick = selectWheelColour(7) class="colourpage_colours" id="purple"></div>
+                    <div onclick = selectWheelColour(8) class="colourpage_colours" id="pink"></div>
+                </div>
+                <div onclick = nextColourPage() class="btn__next__holder">
+                    <div class="btn__next"><p class="btn__next__text">Pick this colour</p></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="colourpage.js"></script>
+</body>
+
+</html>
