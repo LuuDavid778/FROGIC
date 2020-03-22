@@ -1,24 +1,499 @@
 /* CSS for mobile */
-@media only screen and (max-device-width: 360px){ 
-    body {
-      margin: 0;
-    }
-   #app {
-    background-color: #91ABFF;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Raleway', sans-serif;
+@media only screen and (max-device-width: 450px){ 
+  body {
+    margin: 0;
+  }
+ #app {
+  background-color: #91ABFF;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+#startpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#namepage {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intropage {
+    display:none;
+}
+
+.q__text__header {
+  padding-bottom: 20px;
+}
+
+/* button */
+.btn__next__holder {
+  width: 100%;
+  height:130px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__next {
+  width: 700px;
+  height: 130px;
+  border-radius: 100px;
+  background-color: #F08080;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 150px;
+}
+
+.btn__next__text {
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  
+}
+
+
+
+
+/* image sizing */
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30%;
+  bottom: 65%;
+  width: 400px;
+
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+}
+
+#threedogs_text {
+  position: relative;
+left: 65px;
+top:130px;
+}
+
+#logotext_container {
+  position: relative;
+display: flex;
+left: 50px;
+
+}
+
+#logotext_txt {
+  width: 500px;
+}
+
+#logotext_img{
+  width: 250px;
+  height: 250px;
+  top: -40px;
+  left: -35px;
+
+
+  position: relative;
+}
+
+
+#ribbit_hintcenter {
+width: 125px;
+height: 125px;
+position: relative;
+right: -300px;
+top: 40px;
+}
+
+#word_hl {
+  color: #F08080;
+}
+#definition_cardtext {
+right: -55px;
+position: relative;
+top: 20px;
+font-size: 35pt;
+}
+
+/* for "Deductive reasoning: 6" */
+#definition_cardtext_part6 {
+  right: -55px;
+  position: relative;
+  top: 20px;
+  font-size: 33pt;
   }
 
-  #namepage {
-    display: flex;
-    flex-direction: column;
+.deductive_hint_part6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -325px;
+}
+
+#definition_cardtext_movedleft {
+right: 20px;
+position: relative;
+top: 20px;
+font-size: 32pt;
+width: 850px;
+}
+
+
+#deductpage4__text {
+
+position: relative;
+right: -200px;
+width: 400px;
+top: 150px;
+}
+
+/* The gap in the paragraphs on "Deductive reasoning:5" */
+
+#definition_cardtext_movedleft_topgap {
+height: 60px;
+width: 30px;
+}
+}
+
+/* The "really?" text that's positioned higher up */
+
+#logotext_topPosition {
+  position: absolute;
+  top: -200px;
+  left: 100px;
+}
+
+/* The quesiton mark for "deductive reasoning: 6" */
+
+#logotext_topPosition_questionMark {
+  position: absolute;
+  top: -100px;
+  left: 270px;
+  color: white;
+  font-size: 100px;
+}
+
+/*--------------- "deductive_summary_top" CSS ---------------*/
+
+.summary_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  right: -220px;
+  width: 700px;
+  height: 600px;
+  top: 160px;
+}
+
+.summary_container_individual {
+  flex: 1;
+}
+
+.summary_text_top {
+  font-size: 35px;
+  color: #30363A;
+  font-weight: bold;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_text_middle {
+  color: white;
+  margin: 0px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_text_bottom {
+  font-size: 35px;
+  margin: 0px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.summary_check_container {
+  height: 590px;
+  width: 120px;
+  position: absolute;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  top: 160px;
+}
+
+.summary_check_img {
+  flex: 1;
+}
+
+#intro__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro__top_caption {
+  font-size: 40pt;
+  color: white;
+  position: relative;
+  top: -100px;
+}
+
+#intro__header {
+  font-size: 35pt;
+  position: relative;
+  top: 65px;
+}
+
+#intro__header2 {
+  font-size: 25pt;
+  position: relative;
+  top: 65px;
+}
+
+#deductive_reasoning_correct{
+  position: relative;
+  top: 380px;
+  left: 25px;
+}
+
+#deductive_hint__borderline {
+  width: 740px;
+}
+
+#deductive_hint__hint_caption{
+  width: 770px;
+  position: relative;
+  left: 24px;
+
+}
+
+#deductive_hint__ribbit_correct_image{
+  width: 140px;
+  height: 140px;
+}
+
+#deductive_short_shummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 800px;
+  position: relative;
+  top: -20px;
+
+
+}
+
+#deductive_short_shummary__ribbit {
+  position: relative;
+  bottom: 50px;
+  
+}
+
+.deductive_short_shummary__pink {
+  color: #F08080;
+}
+.deductive_short_shummary__bold {
+  color: black;
+  font-weight: 900;
+}
+
+.deductive_short_shummary__last_text {
+  font-size: 43pt;
+  font-weight: 900;
+  color: #F08080;
+}
+
+#btn__change_div {
+  display: flex;
+}
+
+#deductive_short_summary_cont {
+  width: 200px !important;
+  height: 200px !important;
+  position: relative;
+  top: -400px;
+  left: -370px;
+
+}
+
+
+
+
+
+/*--------------- "reward_page" CSS ---------------*/
+
+
+#reward_page__image {
+  position: relative;
+  top: 300px !important;
+  width: 1000px !important;
+  height: 1000px !important;
+
+  margin: 0 -50%;
+
+
+}
+
+
+#reward_page__hoppy {
+  width:180px;
+  height: 180px;
+  position:relative;
+  left: 300px;
+  top: 30px;
+}
+
+.reward_page__text {
+  position:relative;
+  left: 70px;
+}
+
+
+/*--------------- "inductive_reasoning" CSS ---------------*/
+
+#induct_1__cardtext {
+  position: relative;
+  top: 80px;
+
+}
+
+#inductive_2__cardtext {
+  position: relative;
+  left: 140px;
+  top: 130px;
+}
+
+#inductive_3__image_text {
+  font-weight: 900;
+}
+
+#inductive_4__text {
+  width: 700px;
+  position: relative;
+  left: 60px;
+  top: 150px;
+  text-align: center;
+  }
+
+#inductive_4__hint {
+  width: 600px;
+  position:relative;
+  left: 100px;
+  top: -25px
+}
+
+#inductive_4__hint_border {
+  width: 480px;
+  position: relative;
+  top: -150px;
+  left: 75px;
+}
+
+#inductive_4__image {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -90px;
+}
+
+#inductive_4__hint_ribbit {
+  width: 130px;
+  height: 130px;
+  top: -60px;
+  position: relative;
+  left: -70px;
+}
+
+#inductive_6__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -40%;
+  bottom: 65%;
+  width: 700px;
+}
+
+#inductive_6__questionMark {
+  position: absolute;
+  top: -400px;
+  left: 220px;
+  color: white;
+  font-size: 100px;
+}
+
+#inductive6_hint__border {
+  border: solid #f08080 5px;
+    height: 55px;
+    width: 450px;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
-  }
-  
-  #intropage {
-      display:none;
-  }
-  
-  }
+    display: flex;
+    position:relative;
+    left: 80px;
+    top: 50px
+}
+
+#inductive6_hint__ribbit {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  bottom: 500px;
+  left: 60px;
+}
+
+#inductive6_hint__cont {
+  display: flex;
+  position: relative;
+  top: 280px;
+}
+
+#inductive7__hint_cont {
+  position: relative;
+  top: 280px;
+  left: 25px;
+}
+
+#inductive_short_summary_2__ribbit {
+  position: relative;
+    top: -85px;
+    left: -30px;
+    width: 130px;
+    height: 130px;
+}
+
+#inductive_short_sunmmary__texts {
+  font-size: 25pt;
+  position: relative;
+  top: -20px !important;
+}
+
+#induct_short_summary_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -5%;
+  bottom: -80px;
+  width: 1000px;
+  height: 500px;
+  margin: 0 -140px;
+}

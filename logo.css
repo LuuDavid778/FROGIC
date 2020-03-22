@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 450px) {
 #container {
     position: relative;
     display: flex;
@@ -13,10 +13,9 @@
 }
 
 #container__img {
-    background-image: url(img/logo.svg);
     width: 230px;
     height: 230px;
-    background-repeat: no-repeat;
+
 }
 
 }

@@ -1,0 +1,81 @@
+/* CSS for mobile */
+@media only screen and (max-device-width: 450px){ 
+    
+    .quiz_button {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+    }
+
+    .quiz_button__text {
+        color: rgb(71, 71, 71);
+        font-weight: 900; 
+        font-size: 40pt;
+        position: relative;
+        top: -100px;
+        
+  
+    }
+
+    .quiz_button__button {
+        background-color: rgb(231, 231, 231);
+        border-radius: 100px;
+        height: 100px;
+        width: 700px;
+        box-shadow:  0 6px 15px 0 rgba(90, 90, 90, 0.3);
+        font-size: 38pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        border: none;
+    }
+
+    .quiz_button__options1 {
+        background-color: rgb(77, 77, 77);
+        color: white;
+        border-radius: 35px;
+        padding: 15px 20px 15px 20px;
+        position: relative;
+        left: -22px;
+        
+    }
+    .quiz_button__options2 {
+        background-color: rgb(77, 77, 77);
+        color: white;
+        border-radius: 35px;
+        padding: 15px 20px 15px 20px;
+        position: relative;
+        left: -22px;
+        
+    }
+    .quiz_button__options3 {
+        background-color: rgb(77, 77, 77);
+        color: white;
+        border-radius: 35px;
+        padding: 15px 20px 15px 20px;
+        position: relative;
+        left: -22px;
+        
+    }
+
+    #quiz_button__1 {
+        position: relative;
+        top: -60px;
+    
+
+    }
+
+    #quiz_button__2 {
+        position: relative;
+    
+   
+  
+    }
+    #quiz_button__3 {
+        position: relative;
+        bottom: -60px;
+     
+    }
+   
+
+  }

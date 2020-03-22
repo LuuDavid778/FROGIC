@@ -1,0 +1,24 @@
+/* CSS for mobile */
+@media only screen and (max-device-width: 450px){ 
+    .card_definition {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 200px;
+
+    }
+    .card_definition__text{
+      font-size: 50px;
+      height: 100px;
+      width: 700px; 
+      
+    }
+
+    .card_definition__keyword {
+      color: #F08080;
+      font-weight: 900; /* font weight is not working for some reason! */
+    }
+    
+  }

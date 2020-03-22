@@ -1,8 +1,0 @@
-@media only screen and (max-device-width: 360px){
-    #image_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-}

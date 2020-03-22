@@ -1,0 +1,56 @@
+@media only screen and (max-device-width: 450px) {
+  .deductive_hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -425px;
+    
+  }
+
+  .deductive_hint__ribbit {
+    width: 130px;
+    height: 130px;
+    top: -15px;
+    position: relative;
+  }
+
+  .deductive_hint__hint_border {
+    border: solid #f08080 5px;
+    height: 55px;
+    width: 400px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .deductive_hint__hint_text {
+    font-size: 25pt;
+    position: relative;
+    top: -33px;
+  }
+
+
+  /* For the "try again" page. */
+
+  .deductive_hint_tryAgain {
+    display: flex;
+    right: -110px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -205px;
+  }
+
+  .deductive_hint__hint_border_tryAgain {
+    border: solid #f08080 5px;
+    height: 55px;
+    width: 710px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+}

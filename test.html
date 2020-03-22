@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+
+
+    #app {
+
+        display: flex;
+    }
+
+    #d1 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius: 200px;
+    }
+
+    #d2 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 200px;
+    }
+
+
+    #d3{
+        border-radius: 200px;
+
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+
+    }
+
+    #car {
+
+
+        margin-top: 50px;
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+    }
+</style>
+
+
+</head>
+<body>
+<div id="app">
+
+    
+    <div onclick = chooseColor(0) id="d1"></div>
+    <div onclick = chooseColor(1) id="d2"></div>
+    <div onclick = chooseColor(2) id="d3"></div>
+
+
+
+
+ 
+
+    </div>
+
+    <div id="car">
+
+
+
+</div>
+</body>
+
+<script>
+var userColor 
+var colors = [
+ {
+     color: "blue"
+ },
+ {
+     color: "yellow"
+ },
+ {
+     color: "red"
+ }
+
+
+
+]
+function chooseColor(colorindex) {
+userColor = colors[colorindex].color
+console.log(userColor)
+document.getElementById("car").style.backgroundColor = userColor
+
+
+}
+
+
+</script>
+
+</html>
