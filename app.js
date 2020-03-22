@@ -233,6 +233,7 @@ function forwardDeduct() {
 
 
 
+
     console.log(deductindex)
 }
 
@@ -314,7 +315,7 @@ function RecievePrize() {
 }
 
 
-//Inductive Reasoning
+//Inductive Reasoning starts here
 
 var inductindex = -1
 var inductstate = [ {
@@ -390,24 +391,61 @@ var inductstate = [ {
 },
 
 {
-    img: `<div id = "logotext_container" id="container">
-        <div  id="container__img"><img id="logotext_img" src="img/three_pandas.svg"></div>
-        <div  id="container__img"><img id="logotext_img" src="img/bone.svg"></div>
-        </div>
-        <div id="logotext_topPosition_questionMark">?</div>`,
+    img: `<div id="inductive_6__questionMark">?</div>
+    <div id = "inductive_6__image"><img src="img/three_pandas.svg"></div>`,
     header: ``,
     cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
         <p id ="definition_cardtext_part6">Do all the panda's in the world have no food?</p>
-        <div class="deductive_hint_part6">
-        <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
-        <div class="deductive_hint__hint_border">
-        <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
+        <div id="inductive6_hint__cont">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="inductive6_hint__ribbit">
+            <div class="deductive_hint__hint_border" id="inductive6_hint__border">
+                <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
+            </div>
         </div>`,
     buttontext: "",
     bgColor: "#67abe8"
 },
 
+{
+    img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/panda_happy.svg"></div>`,
+    header: `<p id="intro__header">Correct! Just because two <br> panda's don't have food,<br>it doesn't mean all pandas don't.</p>`,
+    cardtext: `<div class="deductive_hint" id="inductive7__hint_cont">
+        <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="deductive_hint__ribbit_correct_image">
+        <div class="deductive_hint__hint_border" id="deductive_hint__borderline">
+                <p class="deductive_hint__hint_text" id="deductive_hint__hint_caption">Hint: The conclusion wasn't logical, great job!</p>
+    </div>`,
+    bgColor: "#91abff",
+    fontSize: "10pt",
+    buttontext: "Receive your prize"
 
+},
+
+{
+    img: `
+    <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+    <div id="logotext_topPosition" class="texts">Really?</div>`,
+    header: ``,
+    cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+    <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
+    <div id="definition_cardtext_movedleft_topgap"></div>
+    <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
+    <div class="deductive_hint_tryAgain">
+    <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+    <div class="deductive_hint__hint_border_tryAgain">
+    <p class="deductive_hint__hint_text">Hint: Does the conclusion sound logical?</p>
+    </div>`,
+    buttontext: "Try again"
+},
+
+{ //needed to be changed for the inductive 
+    img: `<img src="img/reward_page_image.svg" id="reward_page__image">`,
+    header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+    cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
+    <p>You got the wheels for the car. Let's review!</p>`,
+    bgColor: "#91abff",
+    fontSize: "35pt",
+    buttontext: "Review"
+},
 
 ];
 
@@ -422,26 +460,81 @@ function forwardInduct() {
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
+
     if (inductindex === 1) {		
         document.getElementById("back_button_display").style.display = "flex";
         induct_back_button_state = true;
 
     }
+    if (inductindex === 5) {
+        document.getElementById("btn__change_div").innerHTML = `<div class="yesno_button_container">
+        <div class="yesno_btn__nextyes" onclick = "InductYesButton()"><p class="yesno_btn__next__text" id="yesno_btn_yes">Yes</p></div>
+        <div class="yesno_btn__nextno" onclick = "InductNoButton()"><p class="yesno_btn__next__text" id="yesno_btn_no">No</p></div>
+    </div>`
+    }
 
 }
 
 function backwardInduct() {
+    console.log(inductindex)
     inductindex--
     if (inductindex === 0) {   
         document.getElementById("back_button_display").style.display = "none";
         induct_back_button_state = false;
-
     }  
+    
     document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
     document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = inductstate[inductindex].bgColor;
+    console.log(inductindex)
     }
+
+    function InductYesButton() {
+
+        inductindex = 7
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardInduct() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Try Again</p>
+        </div>
+        </div>
+        </div>`
+        document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false 
+        inductindex = 0
+        console.log(inductindex)
     
+    }
+
+    function InductNoButton() {
+        inductindex = 6
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardInduct() class="btn__next__holder">
+    <div id="intropage__forward" class="btn__next">
+        <p id="nextbutton" class="btn__next__text">Receive Your Prize</p>
+    </div>
+    </div>
+    </div>`
+        document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+        console.log(inductindex)
+        inductindex = 7
+        
+    }
+    function InductRecievePrize() {
+        inductindex = 8
+        document.querySelector(".q__text__header").innerHTML = inductstate[deductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[deductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[deductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[deductindex].img;
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    
+    }

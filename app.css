@@ -407,3 +407,54 @@ width: 30px;
   left: -70px;
 }
 
+#inductive_6__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -40%;
+  bottom: 65%;
+  width: 700px;
+}
+
+#inductive_6__questionMark {
+  position: absolute;
+  top: -400px;
+  left: 220px;
+  color: white;
+  font-size: 100px;
+}
+
+#inductive6_hint__border {
+  border: solid #f08080 5px;
+    height: 55px;
+    width: 450px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position:relative;
+    left: 80px;
+    top: 50px
+}
+
+#inductive6_hint__ribbit {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  bottom: 500px;
+  left: 60px;
+}
+
+#inductive6_hint__cont {
+  display: flex;
+  position: relative;
+  top: 280px;
+}
+
+#inductive7__hint_cont {
+  position: relative;
+  top: 280px;
+  left: 25px;
+}
+
