@@ -1,5 +1,6 @@
 var deductindex = 0
 var back_button_state = true
+var induct_back_button_state = false
 var deductstate = [{
         img: `<img id="image_container_img" src="img/logo.svg">`,
         header: "<p>Hello <span id=\"nameofuser\"></span>!<br> My name is Hoppy.</p>",
@@ -222,11 +223,11 @@ function forwardDeduct() {
             <p id="nextbutton" class="btn__next__text">Okay!</p>
         </div>
     </div>`;
-        document.getElementById("back_button_display").innerHTML = `<button id= "back_button_display" onclick=backwardInduct() class="back_button">
+    document.getElementById("back_button_container").innerHTML = `<button id= "back_button_display" onclick=backwardInduct() class="back_button">
         <img src="img/back_icon.svg" class="back_icon">
         <div class="button_text">Back</div>
     </button>`;
-        
+    document.getElementById("back_button_display").style.display = "none"; 
 
     }
 
@@ -243,7 +244,7 @@ function backwardDeduct() {
         resetPage()
         startGame()
         deductindex = 0
-        document.querySelector("#app").style.backgroundColor = deductstate[deductindex].bgColor
+        document.querySelector("#app").style.backgroundColor = "#91abff"
     } else {
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
@@ -265,6 +266,7 @@ function storeName() {
     document.getElementById("app").style.backgroundColor = "#fdbe6c";
     deductstate[2].header = "<p>Hey " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Racer.</p>"
     deductstate[0].header = "<p>Hello " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Hoppy.</p>"
+    inductstate[0].header = "<p>Hello " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Timothy.</p>"
 }
 
 function YesButton() {
@@ -412,33 +414,29 @@ var inductstate = [ {
 
 
 function forwardInduct() {
-    document.getElementById("back_button_display").style.display = "flex";
     inductindex++
-    console.log(inductindex)
+    console.log(inductindex + "induct index")		
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
     document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
     document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
-
-    if (back_button_state === false) {
+    if (inductindex === 1) {		
         document.getElementById("back_button_display").style.display = "flex";
-        back_button_state = true
-    }
+        induct_back_button_state = true;
 
+    }
 
 }
 
 function backwardInduct() {
     inductindex--
-    console.log(inductindex)
-    if (inductindex === -1) {
-        resetPage()
-        startGame()
-        inductindex = 0
-        document.querySelector("#app").style.backgroundColor = "#4DC1AE";
-    } else {
+    if (inductindex === 0) {   
+        document.getElementById("back_button_display").style.display = "none";
+        induct_back_button_state = false;
+
+    }  
     document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
     document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
@@ -447,4 +445,3 @@ function backwardInduct() {
     document.getElementById("app").style.backgroundColor = inductstate[inductindex].bgColor;
     }
     
-}
