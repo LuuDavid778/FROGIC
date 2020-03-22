@@ -1,5 +1,6 @@
 var deductindex = 0
 var back_button_state = true
+var induct_back_button_state = false
 var deductstate = [{
         img: `<img id="image_container_img" src="img/logo.svg">`,
         header: "<p>Hello <span id=\"nameofuser\"></span>!<br> My name is Hoppy.</p>",
@@ -70,9 +71,6 @@ var deductstate = [{
         bgColor: "#67abe8",
         fontSize: "35pt",
         buttontext: "Next"
-
-
-
 
     },
 
@@ -219,6 +217,25 @@ function forwardDeduct() {
         document.getElementById("back_button_display").style.display = "none";
     }
 
+    if (deductindex === 11) {
+        document.getElementById("btn__change_div").innerHTML = `<div onclick=forwardInduct() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Okay!</p>
+        </div>
+    </div>`;
+    document.getElementById("back_button_container").innerHTML = `<button id= "back_button_display" onclick=backwardInduct() class="back_button">
+        <img src="img/back_icon.svg" class="back_icon">
+        <div class="button_text">Back</div>
+    </button>`;
+    document.getElementById("back_button_display").style.display = "none"; 
+
+    }
+    if (deductindex === 7) {
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    }
+
+
 
 
     console.log(deductindex)
@@ -232,7 +249,7 @@ function backwardDeduct() {
         resetPage()
         startGame()
         deductindex = 0
-        document.querySelector("#app").style.backgroundColor = deductstate[deductindex].bgColor
+        document.querySelector("#app").style.backgroundColor = "#91abff"
     } else {
         document.querySelector("#nextbutton").innerHTML = deductstate[deductindex].buttontext;
         document.querySelector(".q__text__header").innerHTML = deductstate[deductindex].header;
@@ -254,6 +271,7 @@ function storeName() {
     document.getElementById("app").style.backgroundColor = "#fdbe6c";
     deductstate[2].header = "<p>Hey " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Racer.</p>"
     deductstate[0].header = "<p>Hello " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Hoppy.</p>"
+    inductstate[0].header = "<p>Hello " + "<span id=\"nameofuser\">" + userinput + "</span>" + "!<br> My name is Timothy.</p>"
 }
 
 function YesButton() {
@@ -296,5 +314,235 @@ function RecievePrize() {
     document.querySelector(".q__text__desc").style.fontSize = deductstate[deductindex].fontSize;
     document.querySelector(".image_container").innerHTML = deductstate[deductindex].img;
     document.getElementById("back_button_display").style.display = "none";
+    back_button_state = false
 
 }
+
+
+//Inductive Reasoning starts here
+
+var inductindex = -1
+var inductstate = [ {
+    img:`<img src="img/panda_sad.svg">`,
+    header:"<p>Hey <span id=\"nameofuser\">name</span>!<br> My name is Timothy.</p>",
+    cardtext: `<p id="induct_1__cardtext">I’m starving. <br> Can you help me?</p>`,
+    bgColor: "#4DC1AE",
+    fontSize: "35pt",
+    buttontext: "Help Timothy",
+},
+
+{
+    img:`<img src="img/panda_sad.svg">`,
+    header:``,
+    cardtext: `<p id="inductive_2__cardtext">Timothy has no food.</p>
+    <div class="deductive_hint">
+    <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+    <div class="deductive_hint__hint_border">
+            <p class="deductive_hint__hint_text">Hint: This is a premise!</p>
+    </div>`,
+    bgColor: `#4DC1AE`,
+    fontSize: `35pt`,
+    buttontext: "Next",
+
+},
+
+{
+    img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+        <div  id = "logotext_txt" class="texts">Before we continue,<br>Let's go over a</br><b>premise</b> one more time!</div>
+    </div>`,
+    header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+    cardtext: `<p id ="definition_cardtext"> A <span id = "word_hl"><b> premise</b></span> is a sentence that<br> 
+    supports a conclusion.</p>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Got it!"
+
+},
+
+{
+    img: `<img src="img/two_pandas.svg" id="inductive_4__image">`,
+    header: ``,
+    cardtext: `<p id = "inductive_4__text">Timothy's brother also has no food.</p> <div class="deductive_hint">
+            <div id="inductive_4__hint">
+                <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="inductive_4__hint_ribbit">
+                <div class="deductive_hint__hint_border" id="inductive_4__hint_border">
+                <p class="deductive_hint__hint_text" id="inductive_4__hint_text">Hint: This is also a premise!</p>
+                </div>
+            </div>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Next"
+
+
+},
+
+{
+    img: `<div id = "logotext_container" id="container">
+        <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+        <div  id = "logotext_txt" class="texts">Let's also go over<br><b>conclusions</b> one<br>more time!</div>
+    </div>`,
+    header: `<img id="ribbit_hintcenter" src="img/ribbit_hint.svg">`,
+    cardtext: `<p id ="definition_cardtext_movedleft"> A conclusion is the <span id = "word_hl"><b> finishing statement</b></span>,<br>
+        it can be true or false!</p>
+        <div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext_movedleft">Premises are what <span id = "word_hl"><b>make up a conclusion</b></span>.<br>
+        Make sure you check out the premises to<br>
+        figure out if the conclusion is <span id = "word_hl"><b>true or not!</b></span>`,
+    bgColor: `#4DC1AE`,
+    fontSize: "35pt",
+    buttontext: "Got it!"
+},
+
+{
+    img: `<div id="inductive_6__questionMark">?</div>
+    <div id = "inductive_6__image"><img src="img/three_pandas.svg"></div>`,
+    header: ``,
+    cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+        <p id ="definition_cardtext_part6">Do all the panda's in the world have no food?</p>
+        <div id="inductive6_hint__cont">
+            <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="inductive6_hint__ribbit">
+            <div class="deductive_hint__hint_border" id="inductive6_hint__border">
+                <p class="deductive_hint__hint_text">Hint: This is a conclusion!</p>
+            </div>
+        </div>`,
+    buttontext: "",
+    bgColor: "#4DC1AE"
+},
+
+{
+    img: `<div id="intro__top"><div id="intro__top_caption">You're right!</div><img src="img/panda_happy.svg"></div>`,
+    header: `<p id="intro__header">Correct! Just because two <br> panda's don't have food,<br>it doesn't mean all pandas don't.</p>`,
+    cardtext: `<div class="deductive_hint" id="inductive7__hint_cont">
+        <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit" id="deductive_hint__ribbit_correct_image">
+        <div class="deductive_hint__hint_border" id="deductive_hint__borderline">
+                <p class="deductive_hint__hint_text" id="deductive_hint__hint_caption">Hint: The conclusion wasn't logical, great job!</p>
+    </div>`,
+    bgColor: "#4DC1AE",
+    fontSize: "10pt",
+    buttontext: "Receive your prize"
+
+},
+
+{
+    img: `
+    <div  id="container__img"><img id="logotext_img" src="img/panda_sad.svg"></div>
+    <div id="logotext_topPosition" class="texts">Really?</div>`,
+    header: ``,
+    cardtext: `<div id="definition_cardtext_movedleft_topgap"></div>
+    <p id ="definition_cardtext">It seems you selected the wrong one.<br></p>
+    <div id="definition_cardtext_movedleft_topgap"></div>
+    <p id ="definition_cardtext">Let's review the premises and <br>conclusion again.</p>
+    <div class="deductive_hint_tryAgain">
+    <img src="img/ribbit_hint.svg" class="deductive_hint__ribbit">
+    <div class="deductive_hint__hint_border_tryAgain">
+    <p class="deductive_hint__hint_text">Hint: Does the conclusion sound logical?</p>
+    </div>`,
+    buttontext: "Try again"
+},
+
+{
+    img: `<img src="img/reward_page_image2.svg" id="reward_page__image">`,
+    header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+    cardtext: `<div class="reward_page__text"><p>Good job!</p><br/>
+    <p>You got body for the car.<br>Go over what you did with<br>Mr. Big.!</p>`,
+    bgColor: "#4DC1AE",
+    fontSize: "35pt",
+    buttontext: "Review"
+},
+
+];
+
+
+
+function forwardInduct() {
+    inductindex++
+    console.log(inductindex + "induct index")		
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = "#4DC1AE";
+
+    if (inductindex === 1) {		
+        document.getElementById("back_button_display").style.display = "flex";
+        induct_back_button_state = true;
+
+    }
+    if (inductindex === 5) {
+        document.getElementById("btn__change_div").innerHTML = `<div class="yesno_button_container">
+        <div class="yesno_btn__nextyes" onclick = "InductYesButton()"><p class="yesno_btn__next__text" id="yesno_btn_yes">Yes</p></div>
+        <div class="yesno_btn__nextno" onclick = "InductNoButton()"><p class="yesno_btn__next__text" id="yesno_btn_no">No</p></div>
+    </div>`
+    }
+    if (inductindex === 5) {
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    }
+
+}
+
+function backwardInduct() {
+    console.log(inductindex)
+    inductindex--
+    if (inductindex === 0) {   
+        document.getElementById("back_button_display").style.display = "none";
+        induct_back_button_state = false;
+    }  
+
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = inductstate[inductindex].bgColor;
+    console.log(inductindex)
+    }
+
+    function InductYesButton() {
+
+        inductindex = 7
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardInduct() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Try Again</p>
+        </div>
+        </div>
+        </div>`
+        document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false 
+        inductindex = 0
+        console.log(inductindex)
+    
+    }
+
+    function InductNoButton() {
+        inductindex = 6
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardInduct() class="btn__next__holder">
+    <div id="intropage__forward" class="btn__next">
+        <p id="nextbutton" class="btn__next__text">Receive Your Prize</p>
+    </div>
+    </div>
+    </div>`
+        document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+        console.log(inductindex)
+        inductindex = 7
+        
+    }
+    function InductRecievePrize() {
+        inductindex = 8
+        document.querySelector(".q__text__header").innerHTML = inductstate[deductindex].header;
+        document.querySelector(".q__text__desc").innerHTML = inductstate[deductindex].cardtext;
+        document.querySelector(".q__text__desc").style.fontSize = inductstate[deductindex].fontSize;
+        document.querySelector(".image_container").innerHTML = inductstate[deductindex].img;
+        document.getElementById("back_button_display").style.display = "none";
+        back_button_state = false
+    
+    }
