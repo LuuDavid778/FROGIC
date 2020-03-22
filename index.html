@@ -13,6 +13,9 @@
     <link href="deductive_hint.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="yesnobtn.css" rel="stylesheet">
+    <link href="quizstyling.css" rel="stylesheet">
+    <link href="quiz_q01.css" rel="stylesheet">
+    <link href="quiz_button.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,11 +80,69 @@
 
             </div>
 
+            <div id="quizpage">
+                <div id="quiz__question_sect">
+                    <div class="q__container">
+                        <div class="q__progress__container">
+                            <h6 class="q__qnum">Question 1/4</h6>
+                            <div class="progress__bar">
+                                <div class="progress__current"></div>
+                            </div>
+                        </div>
+                        <div class="q__choice_and_img__container">
+                            <div class="q__choice__container">
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">All apples are fruits.</h5>
+                                        <p class="q__choice__sub">General!</p>
+                                    </div>
+                                </div>
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">Fruits have seeds.</h5>
+                                        <p class="q__choice__sub">Specific!</p>
+                                    </div>
+                                </div>
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">Apples are fruits.</h5>
+                                        <p class="q__choice__sub">Specific!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q__img__container">
+                                <img class="q__img" src="img/apple.svg">
+                                <img class="q__img q__img__02" src="img/seed.svg">
+                                <img class="q__img" src="img/apple_and_seed.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                    <div id="card1">
+                   
+                            <div class="quiz_button__text">What is the following example?</div>
+                            <div id="quiz_button__div1">
+                            <button onclick="ChosenOption(1)" class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options1">A</span> Inductive Reasoning</button>
+                        </div>
+                        <div id="quiz_button__div2">
+                            <button onclick="ChosenOption(2)"class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">B</span> Abductive Reasoning</button>
+                        </div>
+                        <div id="quiz_button__div3">
+                            <button onclick="ChosenOption(3)" class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options3">C</span> Deductive Reasoning</button>
+                        </div>
+                    
+           
+        
+        
+        
+            </div>
 
             
         </div>
 
         <script src="app.js"></script>
+        <script src="quiz.js"></script>
 </body>
 
 </html>

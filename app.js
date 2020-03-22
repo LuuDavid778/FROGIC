@@ -515,6 +515,12 @@ var inductstate = [{
 ];
 
 
+function changetoQuiz() {
+    document.getElementById("startpage").style.display = "none";
+    document.getElementById("namepage").style.display = "none";
+    document.getElementById("intropage").style.display = "none";
+    document.getElementById("quizpage").style.display = "flex";
+}
 
 function forwardInduct() {
     inductindex++
@@ -541,6 +547,18 @@ function forwardInduct() {
         document.getElementById("back_button_display").style.display = "none";
         back_button_state = false
     }
+
+    if (inductindex === 9 ) {
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=changetoQuiz() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Take the quiz!</p>
+        </div>`
+
+        
+    }
+
+
+    
 
 }
 
