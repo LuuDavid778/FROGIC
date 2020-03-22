@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="269.137" height="272.22" viewBox="0 0 269.137 272.22">
+  <g id="Group_1174" data-name="Group 1174" transform="translate(-4725 -9365)">
+    <g id="boy2" transform="translate(4725 9365)">
+      <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="11.219" cy="15.868" rx="11.219" ry="15.868" transform="translate(0 84.91)" fill="#eac6a9"/>
+      <path id="Path_339" data-name="Path 339" d="M247.685,195.29c-54.065,0-98.075,38.684-98.075,86.5H345.759C345.759,233.974,301.858,195.29,247.685,195.29Z" transform="translate(-113.116 -9.575)" fill="#c64a36"/>
+      <ellipse id="Ellipse_70" data-name="Ellipse 70" cx="11.219" cy="15.868" rx="11.219" ry="15.868" transform="translate(246.7 84.91)" fill="#eac6a9"/>
+      <circle id="Ellipse_71" data-name="Ellipse 71" cx="44.847" cy="44.847" r="44.847" transform="translate(89.722 150.383)" fill="#ddbea8"/>
+      <path id="Path_340" data-name="Path 340" d="M374.147,193.752c-8.407-16.409-58.877-77.989-110.537-49.172-60.472-25.221-101.67,33.2-112.132,49.172l-7.975-1.946a94.315,94.315,0,0,0-3.244,24.465c0,59.337,55.228,107.428,123.35,107.428s123.35-48.091,123.35-107.428a94.864,94.864,0,0,0-2.974-23.437Z" transform="translate(-129.041 -108.843)" fill="#e8c0aa"/>
+      <path id="Path_341" data-name="Path 341" d="M261.566,175.168C321.038,139.89,363.7,195.091,372.1,211.5l9.84-.919c-12.3-48.037-61.5-83.991-120.377-83.991-58.445,0-107.374,35.413-120.106,82.963l7.975,1.946C159.9,195.523,195.579,143.269,261.566,175.168Z" transform="translate(-126.998 -126.59)" fill="#44413d"/>
+      <path id="Path_342" data-name="Path 342" d="M181.35,170.57c2.514,8.11,21,8.11,24.546,0" transform="translate(-59.054 -51.68)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <ellipse id="Ellipse_72" data-name="Ellipse 72" cx="5.136" cy="8.218" rx="5.136" ry="8.218" transform="translate(81.368 82.098)"/>
+      <ellipse id="Ellipse_73" data-name="Ellipse 73" cx="5.136" cy="8.218" rx="5.136" ry="8.218" transform="translate(174.848 82.098)"/>
+      <line id="Line_77" data-name="Line 77" x1="15.544" transform="translate(78.746 113.943)" fill="none" stroke="#e07070" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_78" data-name="Line 78" x1="15.544" transform="translate(172.198 113.943)" fill="none" stroke="#e07070" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

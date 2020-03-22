@@ -236,3 +236,118 @@ width: 30px;
 .summary_check_img {
   flex: 1;
 }
+
+#intro__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro__top_caption {
+  font-size: 40pt;
+  color: white;
+  position: relative;
+  top: -100px;
+}
+
+#intro__header {
+  font-size: 35pt;
+  position: relative;
+  top: 65px;
+}
+
+#intro__header2 {
+  font-size: 25pt;
+  position: relative;
+  top: 65px;
+}
+
+#deductive_reasoning_correct{
+  position: relative;
+  top: 380px;
+  left: 25px;
+}
+
+#deductive_hint__borderline {
+  width: 740px;
+}
+
+#deductive_hint__hint_caption{
+  width: 770px;
+  position: relative;
+  left: 24px;
+
+}
+
+#deductive_hint__ribbit_correct_image{
+  width: 140px;
+  height: 140px;
+}
+
+#deductive_short_shummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 800px;
+  position: relative;
+  top: -70px;
+}
+
+#deductive_short_shummary__ribbit {
+  position: relative;
+  bottom: 50px;
+  
+}
+
+.deductive_short_shummary__pink {
+  color: #F08080;
+}
+.deductive_short_shummary__bold {
+  color: black;
+  font-weight: 900;
+}
+
+.deductive_short_shummary__last_text {
+  font-size: 43pt;
+  font-weight: 900;
+  color: #F08080;
+}
+
+#btn__change_div {
+  display: flex;
+}
+
+
+/*--------------- "reward_page" CSS ---------------*/
+
+
+#reward_page__image {
+  position: relative;
+  top: 300px !important;
+  width: 1000px !important;
+  height: 1000px !important;
+
+  margin: 0 -50%;
+
+
+}
+
+
+#reward_page__hoppy {
+  width:180px;
+  height: 180px;
+  position:relative;
+  left: 300px;
+  top: 30px;
+}
+
+.reward_page__text {
+  position:relative;
+  left: 70px;
+}
+
+
+/*--------------- "inductive_reasoning" CSS ---------------*/
+

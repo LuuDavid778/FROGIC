@@ -1,13 +1,13 @@
+@media only screen and (max-device-width: 450px) {
 body {
     margin: 0px;
 }
 
 .q__container {
     width: 100vw;
-    background-color: lightpink;
     height: 800px;
     position: relative;
-    top: 80px;
+    top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -81,4 +81,5 @@ body {
     width: 150px;
     display: flex;
     flex-direction: column;
+}
 }
