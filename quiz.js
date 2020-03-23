@@ -127,7 +127,8 @@ var quiz_state = [{
 
 
     {
-        question: `<div class="q__container">
+        question: `<div id="white__box__2"></div>
+        <div class="q__container">
         <div class="q__progress__container">
             <h6 class="q__qnum">Question 4/4</h6>
             <div class="progress__bar">
@@ -150,8 +151,8 @@ var quiz_state = [{
                 </div>
                 <div class="q__choice"> 
                     <div>
-                        <h5 class="q__choice__title">Therefore, Emmie will run tomorrow.</h5>
-                        <p class="q__choice__sub">Specific!</p>
+                        <h5 class="q__choice__title__q4">Therefore, Emmie will run tomorrow.</h5>
+                        <p class="q__choice__sub__q4">Specific!</p>
                     </div>
                 </div>  
             </div>
