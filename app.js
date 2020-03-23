@@ -665,6 +665,26 @@ function replayInduct() {
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
 
+}
+
+function congratsSwitch() {
+    document.getElementById("quizpage").style.display = "none"
+    document.getElementById("intropage").style.display = "flex"
+    inductindex = 11
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = "#4DC1AE";
+
+
+
+}
+
+
+function resetwholething() {
+window.location.reload();
 
 
 

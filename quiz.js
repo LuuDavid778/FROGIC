@@ -187,6 +187,11 @@ function barProgress(){
 
 var quiz_select
 
+function changetoColour(){
+    document.getElementById("quizpage").style.display = "none"
+    document.getElementById("intropage").style.display = "none"
+    document.getElementById("colourpage").style.display = "flex"
+}
 // this is the javascript for the overall quiz process
 // in the quiz.html, the three selections have the same function although they are numbered in the parameters e.g. ChosenOption(1) , ChosenOption(2), ChosenOption(3)
 function ChosenOption(n) {
@@ -225,6 +230,14 @@ function ChosenOption(n) {
             document.getElementById("quiz_button__2").style.color = "black"
             document.getElementById("quiz_button__3").style.color = "black"
         }, 1500);
+    }
+
+    if (quiz_counter === 3 ) {
+        quiz_state[3].selection2 = `<button onclick = congratsSwitch() class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">B</span> Conclusion</button>`
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=changetoColour()  class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Take the quiz!</p>
+        </div>`
     }
 }
 // advances the quiz, quiz changes based on what # the index is.
