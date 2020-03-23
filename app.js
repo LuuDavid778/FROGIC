@@ -509,6 +509,14 @@ var inductstate = [{
         fontSize: "35pt",
         buttontext: "Take the Quiz"
     },
+    {
+        img: `<img src="img/congrats.svg" id="reward_page__image">`,
+        header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+        cardtext: `<div class="reward_page__text"><p>Congrats!</p><br/><p>Let’s colour the car now!</p>`,
+        bgColor: "#91ABFF",
+        fontSize: "35pt",
+        buttontext: "Colour the car"
+    }
 
 
 
