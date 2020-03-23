@@ -24,6 +24,39 @@
   height: 70%;
 }
 
+#q__img1__array2 {
+  position: relative;
+  right: -40px;
+  width: 70%;
+  height: 70%;
+  top: -30px;
+}
+
+#q__img2__array2 {
+  position: relative;
+  right: -40px;
+  width: 70%;
+  height: 70%;
+  top: -160px;
+}
+
+#q__img3__array2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 10px;
+  left: 580px;
+}
+
+#white__box {
+  width: 700px;
+  height: 150px;
+  background-color: #FFFFFF;
+  border-radius: 80px;
+  position: absolute;
+  top: 480px;
+left: 140px;
+}
 
 }
 

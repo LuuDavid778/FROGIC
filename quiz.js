@@ -41,7 +41,8 @@ var quiz_state = [{
         answer: 3
     },
     {
-        question: `<div class="q__container">
+        question: `<div id="white__box"></div>
+        <div class="q__container">
         <div class="q__progress__container">
             <h6 class="q__qnum">Question 2/4</h6>
             <div class="progress__bar">
@@ -58,8 +59,8 @@ var quiz_state = [{
                 </div>
                 <div class="q__choice">
                     <div id = "bordertest" >
-                        <h5 class="q__choice__title">Reo is a boy.</h5>
-                        <p class="q__choice__sub">Specific!</p>
+                        <h5 class="q__choice__title__q2">Reo is a boy.</h5>
+                        <p class="q__choice__sub__q2">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
@@ -70,9 +71,9 @@ var quiz_state = [{
                 </div>  
             </div>
             <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/boy1.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/boy2.svg">
-                <img id = "q__img3"  class="q__img" src="img/apple_and_seed.svg">
+                <img id = "q__img1__array2" src="img/boy1.svg">
+                <img id = "q__img2__array2" src="img/boy2.svg">
+                <img id = "q__img3__array2" src="img/tennis.svg">
             </div>
         </div>
     </div>`,
@@ -90,31 +91,31 @@ var quiz_state = [{
             </div>
         </div>
         <div class="q__choice_and_img__container">
-            <div class="q__choice__container">
+            <div class="q__choice__container__q3">
                 <div class="q__choice">
                     <div>
-                        <h5 class="q__choice__title">You found a coin in the purse.</h5>
+                        <h5 class="q__choice__title__q3">You found a coin in the purse.</h5>
                         <p class="q__choice__sub">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
                     <div id = "bordertest" >
-                        <h5 class="q__choice__title">You found another coin in the purse.</h5>
+                        <h5 class="q__choice__title__q3">You found another coin in the purse.</h5>
                         <p class="q__choice__sub">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
                     <div>
-                        <h5 class="q__choice__title">There are only coins 
+                        <h5 class="q__choice__title__q3">There are only coins 
                         in the purse.</h5>
                         <p class="q__choice__sub">General!</p>
                     </div>
                 </div>  
             </div>
-            <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/purse.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/purse2.svg">
-                <img id = "q__img3"  class="q__img" src="img/purse3.svg">
+            <div class="q__img__container__q3">
+                <img id = "q__img1" class="q__img__q3__1" src="img/purse.svg">
+                <img id = "q__img2" class="q__img__q3__2" src="img/purse2.svg">
+                <img id = "q__img3" class="q__img__q3__3" src="img/purse3.svg">
             </div>
         </div>
     </div>`,
@@ -134,7 +135,7 @@ var quiz_state = [{
             </div>
         </div>
         <div class="q__choice_and_img__container">
-            <div class="q__choice__container">
+            <div class="q__choice__container__q4">
                 <div class="q__choice">
                     <div>
                         <h5 class="q__choice__title">Emmie ran yesterday.</h5>
@@ -154,10 +155,10 @@ var quiz_state = [{
                     </div>
                 </div>  
             </div>
-            <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/girlcalendar1.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/girlcalendar2.svg">
-                <img id = "q__img3"  class="q__img" src="img/girlcalendar3.svg">
+            <div class="q__img__container__q4">
+                <img class="q__img__q4__1" src="img/girlcalendar1.svg">
+                <img id = "q__img2" class="q__img__q4__2" src="img/girlcalendar2.svg">
+                <img id = "q__img3" class="q__img__q4__3" src="img/girlcalendar3.svg">
             </div>
         </div>
     </div>`,
