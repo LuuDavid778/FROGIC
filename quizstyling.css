@@ -58,5 +58,15 @@
 left: 140px;
 }
 
+#white__box__2 {
+  width: 800px;
+  height: 200px;
+  background-color: #FFFFFF;
+  border-radius: 80px;
+  position: absolute;
+  top: 690px;
+left: 100px;
+
 }
 
+}

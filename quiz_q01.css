@@ -197,4 +197,19 @@ body {
     top: -115px;
 }
 
+.q__choice__title__q4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-family: 'Raleway', sans-serif;
+    color: #7FB9DF;
+}
+
+.q__choice__sub__q4 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #7FB9DF;
+}
+
 }
