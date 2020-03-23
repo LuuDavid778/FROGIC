@@ -9,48 +9,49 @@ var wheelcolour_state = [
     {
 
         wheelColour: `<img src = "car_parts/tire_red.svg">`,
-       
+        finalwheelColour: `<img src = "car_parts/tire_red.svg" id= "tire">`
     },
 
     {
 
         wheelColour: `<img src = "car_parts/tire_orange.svg">`,
-      
+        finalwheelColour: `<img src = "car_parts/tire_orange.svg" id= "tire">`
     },
 
     {
 
         wheelColour: `<img src = "car_parts/tire_yellow.svg">`,
-      
+        finalwheelColour: `<img src = "car_parts/tire_yellow.svg" id= "tire">`
     },
     {
 
         wheelColour: `<img src = "car_parts/tire_green.svg">`,
-       
+        finalwheelColour: `<img src = "car_parts/tire_green.svg" id= "tire">`
     },
 
     {
 
-        wheelColour: `<img src = "car_parts/tire_lightblue.svg">`,
-        
+        wheelColour: `<img src = "car_parts/tire_lightblue.svg" >`,
+        finalwheelColour: `<img src = "car_parts/tire_lightblue.svg" id= "tire">`
     },
 
     {
 
         wheelColour: `<img src = "car_parts/tire_blue.svg">`,
-       
+        finalwheelColour: `<img src = "car_parts/tire_blue.svg" id= "tire">`
     },
 
     {
 
         wheelColour: `<img src = "car_parts/tire_purple.svg">`,
+        finalwheelColour: `<img src = "car_parts/tire_purple.svg" id= "tire">`
        
     },
 
     {
 
         wheelColour: `<img src = "car_parts/tire_pink.svg">`,
-        
+        finalwheelColour: `<img src = "car_parts/tire_pink.svg" id= "tire">`
     },    
 
 ];
@@ -70,7 +71,7 @@ var colourPage = [
 var selectedWheelColour
 function selectWheelColour(n) {
 document.querySelector(".carpart_container").innerHTML = wheelcolour_state[n].wheelColour
-selectedWheelColour = wheelcolour_state[n].wheelColour
+document.getElementById("final_tire").innerHTML = wheelcolour_state[n].finalwheelColour
 
 
 
@@ -102,6 +103,8 @@ if (pageindex === 1) {
 
 }
 
+
+
 }
 
 function changetoLastPage() {
@@ -123,47 +126,55 @@ var bodycolour_state = [
     {
 
         bodyColour: `<img src = "car_parts/car_red.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_red.svg" id= "car">`
        
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_orange.svg" id="carpart_size">`,
+         finalbodyColour: `<img src = "car_parts/car_orange.svg"  id= "car">`
       
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_yellow.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_yellow.svg"  id= "car">`
       
     },
     {
 
         bodyColour: `<img src = "car_parts/car_green.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_green.svg"  id= "car">`
        
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_lightblue.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_lightblue.svg"  id= "car">`
         
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_blue.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_blue.svg"  id= "car">`
        
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_purple.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_purple.svg"  id= "car">`
        
     },
 
     {
 
         bodyColour: `<img src = "car_parts/car_pink.svg" id="carpart_size">`,
+        finalbodyColour: `<img src = "car_parts/car_pink.svg"  id= "car">`
         
     },    
 
@@ -173,4 +184,5 @@ var selectBodyColor
 
 function selectBodyColour(n) {
     document.querySelector(".carpart_container").innerHTML = bodycolour_state[n].bodyColour
+    document.getElementById("final_body").innerHTML = bodycolour_state[n].finalbodyColour
     }

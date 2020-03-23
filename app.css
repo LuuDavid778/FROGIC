@@ -517,4 +517,206 @@ width: 30px;
   display: none;
 }
 
+#colourpage {
+  display: flex;
+  justify-content: center;
+}
+
+
+#lastpage {
+background-color: #91ABFF;
+height: 100vh;
+width: 100vw;
+display: none;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.carpart_container {
+top: 200px;
+position: absolute;
+
+}
+
+.carpart_container img {
+width: 700px;
+height: 100%;
+
+}
+#card {
+  display: flex;
+  height: 60%
+}
+
+.colourpage_colours_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.colourpage_colours {
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  margin: 45px;
+}
+
+.colourpage_colours_top_row {
+  display: flex;
+}
+
+.colourpage_colours_bot_row {
+  display: flex;
+}
+
+
+
+.colourpage_header {
+
+  width: 900px;
+  height: 200px;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colourpage_header_img {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
+}
+
+#colourpage_header_text {
+  font-size: 25pt;
+}
+
+#carpart_size {
+position: relative;
+top: -60px;
+}
+.btn__next {
+  width: 75%;
+  height: 130px;
+  border-radius: 100px;
+  background-color: #F08080;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 75px;
+}
+
+#red {
+  background-color: #FF6262;
+}
+
+#orange {
+  background-color: #FFB062;
+}
+
+#yellow {
+  background-color: #FFFF62;
+}
+
+#green {
+  background-color: #9EFF62;
+}
+
+#cyan {
+  background-color: #94FCF8;
+}
+
+#blue {
+  background-color: #6268FF;
+}
+
+#purple {
+  background-color: #BB84FC;
+}
+
+#pink {
+  background-color: #FD80EA;
+}
+
+
+
+#last_page__header{
+  color: white;
+  font-size: 90pt;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  top: -210px;
+  
+}
+
+#last_page__car_container {
+  position: relative;
+  top: 90px;
+  width: 300px;
+  height: 600px;
+
+}
+
+#last_page__text_container {
+  display: flex;
+  color: white;
+  font-size: 28pt;
+
+}
+
+
+#car {
+width: 700px;
+height: 100%;
+position: relative;
+left: 130px;
+top:-200px;
+}
+
+#tire {
+width: 490px;
+height: 100%;
+position: relative;
+left: 215px;
+top: -310px;
+}
+
+
+#sparkles {
+width: 930px;
+height: 700px;
+position: relative;
+top: -810px;
+left: 20px;
+
+}
+#hoppy_and_grandpa_img {
+width: 200px;
+height: 200px;
+position: relative;
+right: -60px;
+top: -120px;
+
+}
+
+#last_page__text_container {
+width: 900px;
+height: -130px;
+position: relative;
+top: 100px;
+
+}
+#last_page__texts {
+position: relative;
+right: -100px;
+top: -100px;
+
+}
+
+
+
+
 

@@ -43,7 +43,7 @@ var quiz_state = [{
     {
         question: `<div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 2/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
@@ -84,7 +84,7 @@ var quiz_state = [{
     {
         question: `<div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 3/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
@@ -128,7 +128,7 @@ var quiz_state = [{
     {
         question: `<div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 4/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
