@@ -656,6 +656,7 @@ function replayDeduct() {
 
 
 function replayInduct() {
+    
     inductindex = 0
  
     document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
@@ -664,6 +665,11 @@ function replayInduct() {
     document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
+    console.log(inductindex + "end")
+    document.getElementById("btn__change_div").innerHTML = ` <div onclick=forwardInduct() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Take the quiz!</p>
+        </div>`
 
 }
 
