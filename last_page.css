@@ -1,0 +1,117 @@
+/* CSS for mobile */
+@media only screen and (max-device-width: 450px){ 
+    body {
+      margin: 0;
+    }
+   #app {
+    background-color: #91ABFF;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+  }
+
+  #last_page__header{
+      color: white;
+      font-size: 90pt;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+      top: -210px;
+      
+  }
+
+  #last_page__car_container {
+      position: relative;
+      top: 90px;
+      width: 300px;
+      height: 600px;
+
+  }
+
+  #last_page__text_container {
+      display: flex;
+      color: white;
+      font-size: 28pt;
+
+  }
+
+
+#car {
+    width: 700px;
+    height: 100%;
+    position: relative;
+    left: 130px;
+    top:-200px;
+}
+
+#tire {
+    width: 490px;
+    height: 100%;
+    position: relative;
+    left: 215px;
+    top: -310px;
+}
+
+
+#sparkles {
+    width: 930px;
+    height: 700px;
+    position: relative;
+    top: -810px;
+    left: 20px;
+
+}
+#hoppy_and_grandpa_img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: -60px;
+    top: -120px;
+
+}
+
+#last_page__text_container {
+    width: 900px;
+    height: -130px;
+    position: relative;
+    top: 100px;
+
+}
+#last_page__texts {
+    position: relative;
+    right: -100px;
+    top: -100px;
+
+}
+
+.btn__next__holder {
+        display: flex;
+        justify-content: center;
+    }
+    
+.btn__next {
+        width: 100%;
+        height:130px;
+        border-radius: 100px;
+        background-color: #F08080;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 150px;
+    }
+
+.btn__next__text {
+        font-size: 50px;
+        color: white;
+        font-weight: bolder;
+
+    }
+
+}
+

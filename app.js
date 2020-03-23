@@ -509,12 +509,26 @@ var inductstate = [{
         fontSize: "35pt",
         buttontext: "Take the Quiz"
     },
+    {
+        img: `<img src="img/congrats.svg" id="reward_page__image">`,
+        header: `<img src="img/logo.svg" id="reward_page__hoppy">`,
+        cardtext: `<div class="reward_page__text"><p>Congrats!</p><br/><p>Let’s colour the car now!</p>`,
+        bgColor: "#91ABFF",
+        fontSize: "35pt",
+        buttontext: "Colour the car"
+    }
 
 
 
 ];
 
 
+function changetoQuiz() {
+    document.getElementById("startpage").style.display = "none";
+    document.getElementById("namepage").style.display = "none";
+    document.getElementById("intropage").style.display = "none";
+    document.getElementById("quizpage").style.display = "flex";
+}
 
 function forwardInduct() {
     inductindex++
@@ -541,6 +555,18 @@ function forwardInduct() {
         document.getElementById("back_button_display").style.display = "none";
         back_button_state = false
     }
+
+    if (inductindex === 9 ) {
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=changetoQuiz() class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Take the quiz!</p>
+        </div>`
+
+        
+    }
+
+
+    
 
 }
 
@@ -639,6 +665,26 @@ function replayInduct() {
     document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
     document.getElementById("app").style.backgroundColor = "#4DC1AE";
 
+}
+
+function congratsSwitch() {
+    document.getElementById("quizpage").style.display = "none"
+    document.getElementById("intropage").style.display = "flex"
+    inductindex = 11
+    document.querySelector(".q__text__header").innerHTML = inductstate[inductindex].header;
+    document.querySelector("#nextbutton").innerHTML = inductstate[inductindex].buttontext;
+    document.querySelector(".q__text__desc").innerHTML = inductstate[inductindex].cardtext;
+    document.querySelector(".q__text__desc").style.fontSize = inductstate[inductindex].fontSize;
+    document.querySelector(".image_container").innerHTML = inductstate[inductindex].img;
+    document.getElementById("app").style.backgroundColor = "#4DC1AE";
+
+
+
+}
+
+
+function resetwholething() {
+window.location.reload();
 
 
 

@@ -13,6 +13,10 @@
     <link href="deductive_hint.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="yesnobtn.css" rel="stylesheet">
+    <link href="quizstyling.css" rel="stylesheet">
+    <link href="quiz_q01.css" rel="stylesheet">
+    <link href="quiz_button.css" rel="stylesheet">
+    <link href="testfinalpart.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,11 +81,136 @@
 
             </div>
 
+            <div id="quizpage">
+                <div id="quiz__question_sect">
+                    <div class="q__container">
+                        <div class="q__progress__container">
+                            <h6 class="q__qnum">Question 1/4</h6>
+                            <div class="progress__bar">
+                                <div class="progress__current"></div>
+                            </div>
+                        </div>
+                        <div class="q__choice_and_img__container">
+                            <div class="q__choice__container">
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">All apples are fruits.</h5>
+                                        <p class="q__choice__sub">General!</p>
+                                    </div>
+                                </div>
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">Fruits have seeds.</h5>
+                                        <p class="q__choice__sub">Specific!</p>
+                                    </div>
+                                </div>
+                                <div class="q__choice">
+                                    <div>
+                                        <h5 class="q__choice__title">Apples are fruits.</h5>
+                                        <p class="q__choice__sub">Specific!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q__img__container">
+                                <img class="q__img" src="img/apple.svg">
+                                <img class="q__img q__img__02" src="img/seed.svg">
+                                <img class="q__img" src="img/apple_and_seed.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                    <div id="card1">
+                   
+                            <div class="quiz_button__text">What is the following example?</div>
+                            <div id="quiz_button__div1">
+                            <button onclick="ChosenOption(1)" class="quiz_button__button" id="quiz_button__1"><span class="quiz_button__options1">A</span> Inductive Reasoning</button>
+                        </div>
+                        <div id="quiz_button__div2">
+                            <button onclick="ChosenOption(2)"class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">B</span> Abductive Reasoning</button>
+                        </div>
+                        <div id="quiz_button__div3">
+                            <button onclick="ChosenOption(3)" class="quiz_button__button" id="quiz_button__3"><span class="quiz_button__options3">C</span> Deductive Reasoning</button>
+                        </div>
+                    
+           
+        
+        
+        
+            </div>
+
+
+            
 
             
         </div>
 
+
+        <div id="colourpage">
+            <div class="carpart_container"><img src="car_parts/tire_default.svg"></div>
+            <div id="card">
+
+                <div class="colourpage_header">
+                    <div id="colourpage_header_img"><img src="img/logo.svg"></div>
+                    <div id="colourpage_header_text"><b>Pick your favourite colour for the wheels!</b></div>
+                </div>
+                <div class="colourpage_colours_cont">
+                    <div class="colourpage_colours_top_row">
+                        <div onclick=selectWheelColour(1) class="colourpage_colours" id="red"></div>
+                        <div onclick=selectWheelColour(2) class="colourpage_colours" id="orange"></div>
+                        <div onclick=selectWheelColour(3) class="colourpage_colours" id="yellow"></div>
+                        <div onclick=selectWheelColour(4) class="colourpage_colours" id="green"></div>
+                    </div>
+
+                    <div class="colourpage_colours_bot_row">
+                        <div onclick=selectWheelColour(5) class="colourpage_colours" id="cyan"></div>
+                        <div onclick=selectWheelColour(6) class="colourpage_colours" id="blue"></div>
+                        <div onclick=selectWheelColour(7) class="colourpage_colours" id="purple"></div>
+                        <div onclick=selectWheelColour(8) class="colourpage_colours" id="pink"></div>
+                    </div>
+                    <div id="colourPage_button">
+                        <div onclick=nextColourPage() class="btn__next__holder">
+                            <div class="btn__next">
+                                <p class="btn__next__text">Pick this colour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="lastpage">
+            <div id="last_page__header">Thank You!</div>
+            <div>
+                <div id="last_page__car_container">
+                    <div id="final_body"><img src="car_parts/car_default.svg" id="car"></div>
+                    <div id="final_tire"><img src="car_parts/tire_default.svg" id="tire"></div>
+                    <div><img src="img/sparkles.svg" id="sparkles"></div>
+                </div>
+            
+            <div id="last_page__text_container">
+                    <img src="img/hoppy_and_grandpa.svg" id="hoppy_and_grandpa_img">
+                    <div id="last_page__texts">Wow! I really like the colours!!!<br>
+                        Thank you very much for your help.<br>
+                        Hoppy got my house safely.<br>
+                        Please help him next time too.
+                    </div>
+            </div>
+            <div id="">
+                    <div onclick = "resetwholething()" class="btn__next__holder">
+                            <div class="btn__next"><p class="btn__next__text">Play again!</p></div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+
         <script src="app.js"></script>
+        <script src="quiz.js"></script>
+        <script src="testfinalpart.js"></script>
 </body>
 
 </html>

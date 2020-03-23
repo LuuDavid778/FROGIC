@@ -41,9 +41,10 @@ var quiz_state = [{
         answer: 3
     },
     {
-        question: `<div class="q__container">
+        question: `<div id="white__box"></div>
+        <div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 2/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
@@ -58,8 +59,8 @@ var quiz_state = [{
                 </div>
                 <div class="q__choice">
                     <div id = "bordertest" >
-                        <h5 class="q__choice__title">Reo is a boy.</h5>
-                        <p class="q__choice__sub">Specific!</p>
+                        <h5 class="q__choice__title__q2">Reo is a boy.</h5>
+                        <p class="q__choice__sub__q2">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
@@ -70,9 +71,9 @@ var quiz_state = [{
                 </div>  
             </div>
             <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/boy1.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/boy2.svg">
-                <img id = "q__img3"  class="q__img" src="img/apple_and_seed.svg">
+                <img id = "q__img1__array2" src="img/boy1.svg">
+                <img id = "q__img2__array2" src="img/boy2.svg">
+                <img id = "q__img3__array2" src="img/tennis.svg">
             </div>
         </div>
     </div>`,
@@ -84,37 +85,37 @@ var quiz_state = [{
     {
         question: `<div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 3/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
         </div>
         <div class="q__choice_and_img__container">
-            <div class="q__choice__container">
+            <div class="q__choice__container__q3">
                 <div class="q__choice">
                     <div>
-                        <h5 class="q__choice__title">You found a coin in the purse.</h5>
+                        <h5 class="q__choice__title__q3">You found a coin in the purse.</h5>
                         <p class="q__choice__sub">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
                     <div id = "bordertest" >
-                        <h5 class="q__choice__title">You found another coin in the purse.</h5>
+                        <h5 class="q__choice__title__q3">You found another coin in the purse.</h5>
                         <p class="q__choice__sub">Specific!</p>
                     </div>
                 </div>
                 <div class="q__choice">
                     <div>
-                        <h5 class="q__choice__title">There are only coins 
+                        <h5 class="q__choice__title__q3">There are only coins 
                         in the purse.</h5>
                         <p class="q__choice__sub">General!</p>
                     </div>
                 </div>  
             </div>
-            <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/purse.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/purse2.svg">
-                <img id = "q__img3"  class="q__img" src="img/purse3.svg">
+            <div class="q__img__container__q3">
+                <img id = "q__img1" class="q__img__q3__1" src="img/purse.svg">
+                <img id = "q__img2" class="q__img__q3__2" src="img/purse2.svg">
+                <img id = "q__img3" class="q__img__q3__3" src="img/purse3.svg">
             </div>
         </div>
     </div>`,
@@ -128,13 +129,13 @@ var quiz_state = [{
     {
         question: `<div class="q__container">
         <div class="q__progress__container">
-            <h6 class="q__qnum">Question 1/4</h6>
+            <h6 class="q__qnum">Question 4/4</h6>
             <div class="progress__bar">
                 <div class="progress__current"></div>
             </div>
         </div>
         <div class="q__choice_and_img__container">
-            <div class="q__choice__container">
+            <div class="q__choice__container__q4">
                 <div class="q__choice">
                     <div>
                         <h5 class="q__choice__title">Emmie ran yesterday.</h5>
@@ -154,10 +155,10 @@ var quiz_state = [{
                     </div>
                 </div>  
             </div>
-            <div class="q__img__container">
-                <img id = "q__img1" class="q__img" src="img/girlcalendar1.svg">
-                <img id = "q__img2" class="q__img q__img__02" src="img/girlcalendar2.svg">
-                <img id = "q__img3"  class="q__img" src="img/girlcalendar3.svg">
+            <div class="q__img__container__q4">
+                <img class="q__img__q4__1" src="img/girlcalendar1.svg">
+                <img id = "q__img2" class="q__img__q4__2" src="img/girlcalendar2.svg">
+                <img id = "q__img3" class="q__img__q4__3" src="img/girlcalendar3.svg">
             </div>
         </div>
     </div>`,
@@ -187,6 +188,11 @@ function barProgress(){
 
 var quiz_select
 
+function changetoColour(){
+    document.getElementById("quizpage").style.display = "none"
+    document.getElementById("intropage").style.display = "none"
+    document.getElementById("colourpage").style.display = "flex"
+}
 // this is the javascript for the overall quiz process
 // in the quiz.html, the three selections have the same function although they are numbered in the parameters e.g. ChosenOption(1) , ChosenOption(2), ChosenOption(3)
 function ChosenOption(n) {
@@ -225,6 +231,14 @@ function ChosenOption(n) {
             document.getElementById("quiz_button__2").style.color = "black"
             document.getElementById("quiz_button__3").style.color = "black"
         }, 1500);
+    }
+
+    if (quiz_counter === 3 ) {
+        quiz_state[3].selection2 = `<button onclick = congratsSwitch() class="quiz_button__button" id="quiz_button__2"><span class="quiz_button__options2">B</span> Conclusion</button>`
+        document.getElementById("btn__change_div").innerHTML = ` <div onclick=changetoColour()  class="btn__next__holder">
+        <div id="intropage__forward" class="btn__next">
+            <p id="nextbutton" class="btn__next__text">Take the quiz!</p>
+        </div>`
     }
 }
 // advances the quiz, quiz changes based on what # the index is.
